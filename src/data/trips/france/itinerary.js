@@ -1,0 +1,363 @@
+export const DAYS = [
+  {
+    num:       '01',
+    date:      'May 15 — Friday',
+    city:      'Paris — Arrival',
+    title:     'Saint-Germain Night',
+    transport: 'RER B from CDG → Paris Centre · 35 min · €11.80 (≈₹1,120)',
+    places: [
+      {
+        time:        '7:00 PM',
+        name:        'Saint-Germain-des-Prés',
+        description: 'The intellectual heart of Paris — a Left Bank neighbourhood built around the oldest church in the city (6th century) and the legendary cafés where Sartre and Simone de Beauvoir wrote over coffee. The streets smell of pastry, old books, and espresso, and the evening light turns the stone buildings a deep gold. For a solo traveller arriving from Bangalore, this is the sensory decompression you need: slow down, sit at a pavement table, and let Paris happen at you.',
+        images: [
+          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 4 → Saint-Germain-des-Prés (from Gare du Nord)',
+        cost:      'Free to wander',
+        tip:       'Get a window seat at Café de Flore or Les Deux Magots for a coffee — it\'s touristy but legitimately good, and the people-watching is unmatched. Skip the full meal prices; just an espresso (€4–5) is fine.',
+      },
+      {
+        time:        '8:30 PM',
+        name:        'Pont des Arts',
+        description: 'The pedestrian bridge across the Seine that connects the Institut de France to the Louvre wing — at night, the string of lamp posts reflects in the river and the views of both banks are spectacular. Once famous for "love locks" (now removed), the bridge itself is quietly beautiful after dark with the bateaux mouches gliding beneath. Standing here at 9 PM in mid-May, with the sky still holding a faint blue above the city silhouette, is a proper Paris arrival moment.',
+        images: [
+          'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Walk 10 min east from Saint-Germain along Quai Malaquais',
+        cost:      'Free',
+        tip:       'The bridge is busiest 8–10 PM. For the best photo angle, shoot from the bridge looking east towards the illuminated Pont Neuf. The Louvre\'s glass pyramid is visible to the north — save it for tomorrow.',
+      },
+    ],
+    food:    'Café de Flore for croque monsieur and a glass of Bordeaux · Breizh Café (nearby on Rue Vieille du Temple) for galettes and crêpes — queue or book ahead',
+    stay:    'Generator Paris, Place du Colonel Fabien, 10th arrondissement — 10 min Metro from city centre',
+    nextDay: '→ Tomorrow: Louvre opens 9 AM — book skip-the-line tickets online tonight (museum.louvre.fr)',
+  },
+
+  {
+    num:       '02',
+    date:      'May 16 — Saturday',
+    city:      'Paris',
+    title:     'Louvre to Latin Quarter',
+    transport: 'Metro Line 1 → Palais Royal–Musée du Louvre · All-day Navigo pass ≈₹480',
+    places: [
+      {
+        time:        '9:00 AM',
+        name:        'Musée du Louvre',
+        description: 'The largest art museum on earth — 35,000 works across three wings of a former royal palace surrounding I.M. Pei\'s glass pyramid. The Mona Lisa is smaller than you expect but still draws a crowd that swarms it like nothing else in the building; the Venus de Milo two galleries away is more impressive in person. Budget at least 3 hours and pick a focus: Denon Wing for Italian and Spanish masters, Sully Wing for Egyptian antiquities, Richelieu for French royal apartments.',
+        images: [
+          'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 1 to Palais Royal–Musée du Louvre',
+        cost:      '₹1,520 (€16 timed entry — book online to skip the 2-hour queue)',
+        tip:       'Enter via the Richelieu Passage (Rue de Rivoli side) — far fewer people than the main pyramid. The Mona Lisa room is at its least crowded at 9:15 AM sharp when it opens. Wednesday and Friday the museum stays open until 9:45 PM if you prefer evening.',
+      },
+      {
+        time:        '12:30 PM',
+        name:        'Tuileries Garden & Palais Royal',
+        description: 'Walk directly from the Louvre\'s Denon exit into the Jardin des Tuileries — 28 hectares of formal French garden with bronze sculptures, fountains, and gravel paths that stretch to the Place de la Concorde obelisk. Grab a café crème from one of the kiosk chairs by the round pond. Then double back east through the colonnade into the Palais Royal gardens — one of Paris\'s hidden treasures, a peaceful 17th-century royal garden surrounded by galleries, cafés, and Daniel Buren\'s striped columns in the courtyard.',
+        images: [
+          'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Walk — the garden connects directly from the Louvre exit',
+        cost:      'Free',
+        tip:       'The Palais Royal garden (Cour d\'Honneur) is where Parisians actually sit and read on warm May afternoons. Bring lunch from a boulangerie and eat here — vastly cheaper than any nearby restaurant and equally atmospheric.',
+      },
+      {
+        time:        '3:00 PM',
+        name:        'Île de la Cité — Notre-Dame Exterior',
+        description: 'Notre-Dame de Paris is mid-reconstruction after the 2019 fire and reopened to visitors in December 2024 — one of the most extraordinary comebacks in architectural history. The cathedral\'s twin towers, flying buttresses, and rose windows over the Seine are the defining image of medieval Paris. Walking the exterior perimeter of the island on the Quai aux Fleurs side at afternoon light, with the Sainte-Chapelle spire visible through the chestnut trees, is one of the great urban walks.',
+        images: [
+          'https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 4 → Cité, walk 3 min',
+        cost:      'Free exterior · Interior entry may require advance booking in 2031',
+        tip:       'Check the official Notre-Dame de Paris website for interior access — capacity may be limited post-restoration. The Sainte-Chapelle (on the same island, ₹1,100) has the most extraordinary medieval stained glass in Europe and is far less crowded.',
+      },
+      {
+        time:        '5:30 PM',
+        name:        'Latin Quarter',
+        description: 'The student neighbourhood of Paris on the Left Bank, centred around the Sorbonne — a maze of cobbled streets, independent bookshops, crêperie windows, and basement jazz clubs. Rue Mouffetard is the main market street and one of the oldest roads in Paris, lined with cheese sellers, wine merchants, and a street market that closes around 7 PM. In the evening the neighbourhood shifts into restaurants and bars; it\'s the most affordable part of central Paris to eat.',
+        images: [
+          'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Walk south over Pont au Double from Notre-Dame (10 min)',
+        cost:      'Free to explore',
+        tip:       'Shakespeare and Company bookshop on Rue de la Bûcherie is the famous English-language bookshop on the Seine — open until 10 PM and worth a browse. The poetry readings on Sunday evenings are free.',
+      },
+    ],
+    food:    'Boulangerie lunch in Tuileries · Rue Mouffetard crêperie or Café de la Mosquée for dinner — couscous and mint tea near the Grande Mosquée is a Paris institution for budget solo travellers',
+    stay:    'Generator Paris, Place du Colonel Fabien',
+    nextDay: '→ Tomorrow: Eiffel Tower summit — timed slot required, book eiffel-tower.com now (fills weeks ahead)',
+  },
+
+  {
+    num:       '03',
+    date:      'May 17 — Sunday',
+    city:      'Paris',
+    title:     'Eiffel Tower to Montmartre Evening',
+    transport: 'Metro Line 6 → Bir-Hakeim · Line 2 → Anvers for Montmartre',
+    places: [
+      {
+        time:        '6:00 PM',
+        name:        'Eiffel Tower — Golden Hour Summit',
+        description: 'Gustave Eiffel\'s 1889 iron lattice tower is 330m tall and still the most visited paid monument on Earth — not because of hype but because the view from the summit across the entire Paris basin is genuinely extraordinary. The golden hour in mid-May falls around 8:30–9:30 PM, meaning a 6 PM arrival lets you ride up in daylight and watch the city shift into purple dusk from the third floor. The tower sparkles for 5 minutes on every hour after dark — from the summit this is the best view of Paris illuminated.',
+        images: [
+          'https://images.unsplash.com/photo-1548536885-4a8a2e5c8f0c?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 6 → Bir-Hakeim (5 min walk to tower)',
+        cost:      '₹2,090 (€22 summit by lift — book the specific timed slot at eiffel-tower.com months ahead)',
+        tip:       'Book the 6:00–6:30 PM entry slot specifically for golden hour light. Take the stairs from ground to second floor (cheaper and less queue) then the lift to the summit. The Champ de Mars below fills with picnickers on Sunday evenings — stop for wine on the grass afterwards.',
+      },
+      {
+        time:        '8:30 PM',
+        name:        'Champs-Élysées & Arc de Triomphe',
+        description: 'The 1.9km ceremonial boulevard from Place de la Concorde to the Arc de Triomphe — lined with flagpoles, plane trees, and luxury flagships. The Arc de Triomphe at the western end was commissioned by Napoleon in 1806 and the rooftop at 50m offers the classic twelve-avenue star view over Haussmann\'s Paris. The tomb of the Unknown Soldier beneath the arch has a flame that is renewed every evening at 6:30 PM by war veterans.',
+        images: [
+          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 6 → Charles de Gaulle–Étoile (or walk from Trocadéro, 20 min)',
+        cost:      '₹1,235 (€13 Arc de Triomphe rooftop) · Free to walk the boulevard',
+        tip:       'The Arc rooftop is free for EU residents under 26 — worth checking. Cross to the Arc using the underground pedestrian tunnel from Avenue de la Grande Armée side — never cross the roundabout on foot. The top is especially good after dark with the avenue lit up below.',
+      },
+      {
+        time:        '10:00 PM',
+        name:        'Pigalle & Lower Montmartre',
+        description: 'The base of the Montmartre hill — Pigalle is a neighbourhood in transition from historic cabaret district to wine-bar and cocktail-bar hotspot. Rue des Martyrs is the main street running uphill: natural wine shops, fromageries, and late-night bars crowd both sides. The Moulin Rouge windmill at the foot of the hill is lit red and visible from several streets away. A Sunday night in Pigalle in May is lively without being overwhelming.',
+        images: [
+          'https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 2 → Blanche or Pigalle',
+        cost:      'Free to walk · Cocktails ₹950–₹1,500',
+        tip:       'Walk up Rue des Martyrs for a natural wine by the glass at one of the small bars mid-street. Avoid the touristy restaurants directly around the Moulin Rouge — they\'re expensive and mediocre. The neighbourhood gets interesting above Pigalle towards Abbesses.',
+      },
+    ],
+    food:    'Early dinner before Eiffel Tower at Le Café du Commerce (15th arr.) · Crêpe sucrée from a street cart on Champs-Élysées · Late night wine at a Rue des Martyrs cave à vins',
+    stay:    'Generator Paris, Place du Colonel Fabien',
+    nextDay: '→ Tomorrow: Montmartre morning — arrive at Sacré-Cœur before 9 AM for crowd-free golden light',
+  },
+
+  {
+    num:       '04',
+    date:      'May 18 — Monday',
+    city:      'Paris',
+    title:     'Montmartre · Marais · Pompidou · Canal',
+    transport: 'Metro Line 2 → Anvers · Line 8 → Chemin Vert for Marais · Line 11 → République for Canal',
+    places: [
+      {
+        time:        '8:00 AM',
+        name:        'Sacré-Cœur & Place du Tertre',
+        description: 'The Romano-Byzantine basilica at the top of Montmartre hill — its white travertine domes visible from much of the city, built between 1875 and 1914. Climb the 300 steps from Abbesses Metro or take the funicular (one Metro ticket). Before 9 AM the terrace below the basilica is serene, and the view north over Paris in morning light — rooftops, chimneys, and zinc — is worth the 7 AM wake-up. Place du Tertre just behind is where Montmartre\'s portrait artists set up from 9 AM; earlier, it\'s a quiet cobbled square with café chairs.',
+        images: [
+          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 2 → Anvers, then Funiculaire de Montmartre (1 Metro ticket)',
+        cost:      'Basilica free · Funicular 1 Metro ticket ≈₹185',
+        tip:       'The interior of Sacré-Cœur has perpetual adoration (people praying silently) — no photography inside and keep noise to a minimum. The garden on the south side of the basilica is the best viewpoint. Grab a croissant from Boulangerie Gontran Cherrier on Rue Caulaincourt.',
+      },
+      {
+        time:        '11:00 AM',
+        name:        'Le Marais District',
+        description: 'Paris\'s most architecturally intact historic neighbourhood — a network of 17th-century hôtels particuliers (private mansions), Jewish bakeries, LGBTQ+ bars, and contemporary art galleries centred around Place des Vosges. The Marais survived Haussmann\'s 19th-century demolitions because it was already a protected historic zone. Today it\'s the best neighbourhood for walking with no agenda: turn any corner and find a medieval courtyard, a designer bakery, or a small museum in a former royal palace.',
+        images: [
+          'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 8 → Chemin Vert or Saint-Paul',
+        cost:      'Free to explore · Place des Vosges free',
+        tip:       'Place des Vosges (1612) is the oldest planned square in Paris — sit in the arcades and eat something from a nearby bakery. Victor Hugo\'s apartment (no. 6) is now a free museum. The Marais is quieter Monday mornings as many galleries are closed — perfect for aimless walking.',
+      },
+      {
+        time:        '2:00 PM',
+        name:        'Centre Pompidou',
+        description: 'The inside-out cultural centre designed by Renzo Piano and Richard Rogers in 1977 — all the structural and mechanical systems (coloured by function: red for movement, blue for air, green for water, yellow for electricity) are on the exterior. The Musée National d\'Art Moderne inside holds Europe\'s largest collection of modern and contemporary art: Matisse, Picasso, Kandinsky, Warhol, and Cindy Sherman all on permanent display. The rooftop terrace offers a 360° panorama of Paris.',
+        images: [
+          'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Walk from Marais (15 min) or Metro Line 11 → Rambuteau',
+        cost:      '₹1,425 (€15 museum entry) · Rooftop free with ticket',
+        tip:       'Monday is typically when many Paris museums close — but Pompidou is open Monday (closed Tuesday). Buy online to skip the queue. The Espace 315 on Level 3 shows rotating contemporary exhibitions — check what\'s on for 2031 via centrepompidou.fr.',
+      },
+      {
+        time:        '5:00 PM',
+        name:        'Canal Saint-Martin',
+        description: 'A 4.5km iron-bridge canal dug by Napoleon in 1825, now a design-conscious neighbourhood of iron footbridges, plane trees, and slow-moving barges. The stretch between Quai de Valmy and Place de la République is lined with independent coffee shops (Ten Belles is the benchmark), concept boutiques, and wine bars with canalside terrace seating. In May the trees are fully leafed and locals sit on the canal banks with bottles of wine after work — one of the most authentic Parisian scenes.',
+        images: [
+          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Walk north from République on Quai de Valmy (10 min from Pompidou)',
+        cost:      'Free to walk',
+        tip:       'Pick up a bottle of Côtes du Rhône from a nearby Franprix (≈₹700) and join the locals sitting on the canal banks at 6 PM. Ten Belles café on Rue de la Grange aux Belles makes exceptional flat whites — the best in this part of Paris.',
+      },
+    ],
+    food:    'Croissant breakfast on Montmartre · L\'As du Fallafel (Rue des Rosiers, Marais) for the legendary falafel wrap at lunch · Natural wine and charcuterie at a Canal Saint-Martin cave à vins for dinner',
+    stay:    'Generator Paris, Place du Colonel Fabien',
+    nextDay: '→ Tomorrow: Versailles — train departs Gare Montparnasse or Versailles-Chantiers; first entry at 9 AM',
+  },
+
+  {
+    num:       '05',
+    date:      'May 19 — Tuesday',
+    city:      'Versailles',
+    title:     'Palace of Versailles',
+    transport: 'RER C → Versailles-Château-Rive Gauche · 35 min from Paris Centre · €7.50 return (≈₹712)',
+    places: [
+      {
+        time:        '9:00 AM',
+        name:        'Palace of Versailles — State Apartments & Hall of Mirrors',
+        description: 'Louis XIV\'s expansion of his father\'s hunting lodge into the largest palace in Europe — 2,300 rooms, 67 staircases, and 800 hectares of gardens served by 620 fountains. The State Apartments trace the planetary rooms (Venus, Diana, Mars, Mercury, Apollo) leading to the Hall of Mirrors: 73m of gilt and glass, 357 mirrors reflecting 20,000 candles, where the German Empire was proclaimed in 1871 and the Treaty of Versailles signed in 1919. The scale is genuinely beyond comprehension until you\'re standing in it.',
+        images: [
+          'https://images.unsplash.com/photo-1566159462553-7ab26fc17b08?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1547637589-f54c34f5d7a4?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Walk 10 min from Versailles-Château RER station',
+        cost:      '₹2,090 (€22 Palace + gardens passport — book at chateauversailles.fr)',
+        tip:       'Arrive at the gates at 8:45 AM — even with a timed ticket, the queues to enter the building form early. Go through the Hall of Mirrors before 10 AM when tour groups flood in. The Queen\'s Apartments are often less crowded than the King\'s side and equally lavish.',
+      },
+      {
+        time:        '12:00 PM',
+        name:        'Gardens of Versailles & Grand Canal',
+        description: 'André Le Nôtre\'s masterpiece of formal French garden design — 800 hectares of geometric parterres, topiaries, fountains, and the 1.6km Grand Canal stretching to the western horizon. On Musical Fountains days (Saturdays and select weekdays in summer) all 620 fountains run to Baroque music from 11 AM to 5:30 PM. The Trianon palaces at the far northern end — the Grand Trianon (marble) and Petit Trianon (Marie-Antoinette\'s private retreat) — are 1.5km from the main palace and require their own time.',
+        images: [
+          'https://images.unsplash.com/photo-1547637589-f54c34f5d7a4?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1566159462553-7ab26fc17b08?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Walk from the palace or rent a golf cart / bicycle on-site',
+        cost:      'Included in Palace passport · Musical Fountains extra ₹950 if applicable',
+        tip:       'Rent a rowboat on the Grand Canal (₹900/hour) — the perspective of the palace from the canal is the best in Versailles and you\'ll share it with far fewer people than the garden parterres. Pack a picnic from a Versailles boulangerie; eating in the gardens is fine.',
+      },
+    ],
+    food:    'Boulangerie picnic in the gardens · Angelina Paris tearoom (inside the palace, splurge-worthy) · Return to Paris for dinner in the Marais or Latin Quarter',
+    stay:    'Generator Paris, Place du Colonel Fabien',
+    nextDay: '→ Tomorrow: Early train to Loire Valley — rental car from Tours station; châteaux open from 9 AM',
+  },
+
+  {
+    num:       '06',
+    date:      'May 20 — Wednesday',
+    city:      'Loire Valley',
+    title:     'Châteaux & Wine',
+    transport: 'TGV Paris Montparnasse → Tours · 1h · €28–45 · Hire car from Tours station',
+    places: [
+      {
+        time:        '10:00 AM',
+        name:        'Château de Chambord',
+        description: 'The largest château in the Loire Valley and one of the most recognisable buildings in France — 440 rooms, 365 chimneys, and a double-helix staircase (possibly designed by Leonardo da Vinci) rising through the centre of the building. Built from 1519 as François I\'s hunting lodge, it sits within a 52 sq km game forest surrounded by a wall that is longer than the entire Paris periphery. The rooftop terrace — a forest of chimneys and dormers built as a "theatre for the court" — is the architectural highlight.',
+        images: [
+          'https://images.unsplash.com/photo-1504649597925-b2bcdb90e9e4?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1568600891747-4d50d89e9a79?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Drive from Tours — D952 east, 45 min · Car park on-site',
+        cost:      '₹1,330 (€14 entry)',
+        tip:       'Climb to the rooftop first — it\'s less crowded in the morning and the double-helix staircase is best appreciated on the way down. The surrounding forest is a UNESCO World Heritage site; a 30-min walk around the outer moat gives you Chambord\'s full silhouette without another tourist in sight.',
+      },
+      {
+        time:        '1:30 PM',
+        name:        'Château de Chenonceau',
+        description: 'The most romantic château in France — spanning the Cher river on five arches, with gardens designed by Diane de Poitiers and Catherine de Médici on opposing banks (each designed by the wife/mistress competing for the king\'s favour). The château was used as a hospital in both World Wars and was the only Loire crossing not controlled by the Germans in WWII — because it literally crossed from occupied to free France at its midpoint. Walking the gallery above the river, with the Cher visible through tall windows on both sides, is extraordinary.',
+        images: [
+          'https://images.unsplash.com/photo-1568600891747-4d50d89e9a79?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1504649597925-b2bcdb90e9e4?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Drive from Chambord via Blois — D976/D764, 40 min',
+        cost:      '₹1,425 (€15 entry)',
+        tip:       'The wax museum inside is skippable. Focus on the gallery above the river and both gardens. The château gets very crowded from 2 PM — arrive before 1:30 PM if possible. The farm shop at the entrance sells Chenonceau wine and jam that travels well as gifts.',
+      },
+      {
+        time:        '4:30 PM',
+        name:        'Vouvray Wine Tasting',
+        description: 'The Loire Valley is one of France\'s finest wine regions — Vouvray produces sparkling and still Chenin Blanc a few kilometres east of Tours. Several family domaines offer walk-in dégustation (tasting) in their cave troglodyte (cellars carved into the soft tufa cliff). Huet, Marc Brédif, and Champalou are the benchmark producers; the wines range from bone-dry to luscious sweet depending on the vintage. Tasting 5–6 wines in a medieval cliff cellar before driving back to Tours is the right pace for an afternoon.',
+        images: [
+          'https://images.unsplash.com/photo-1504649597925-b2bcdb90e9e4?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Drive D952 east from Tours — 10 min to Vouvray village',
+        cost:      '₹500–₹800 for cave dégustation · Free at some domaines',
+        tip:       'Designate yourself as the driver and stick to small sips — Loire roads are narrow and the drive back to Tours requires full attention. Buy a bottle of demi-sec Vouvray to carry home: it travels well and costs ₹1,100–₹1,800 at the domaine.',
+      },
+    ],
+    food:    'Auberge du Bon Laboureur (Chenonceaux village) for a classic Loire lunch — rillettes, pike quenelle, and tarte Tatin · Roadside boulangerie for afternoon snacks',
+    stay:    'Hôtel Colbert Tours or Les Trésorières de la Loire, Tours centre (1 night)',
+    nextDay: '→ Tomorrow: Early TGV back to Paris for the Normandy tour departure (coach leaves Opéra area 7:30 AM)',
+  },
+
+  {
+    num:       '07',
+    date:      'May 21 — Thursday',
+    city:      'Normandy — Day Trip from Paris',
+    title:     'D-Day Beaches & Bayeux',
+    transport: 'Guided tour coach from Paris Opéra · Departs 7:30 AM · Returns 9:30 PM · ≈₹7,000–₹9,000 all-inclusive',
+    places: [
+      {
+        time:        '11:00 AM',
+        name:        'Omaha Beach & American Cemetery',
+        description: 'A 6.5km crescent of sand on the Normandy coast where 34,000 American troops landed on 6 June 1944 — and where 2,000 of them died in the first hours, more than any other beach on D-Day. Today the beach looks almost impossibly peaceful: dunes, grey sand, and the Atlantic. The Normandy American Cemetery above the bluff holds 9,388 crosses and Stars of David in immaculate white Lasa marble rows overlooking the sea, maintained by the American Battle Monuments Commission. The visitor centre below contains a powerful permanent exhibition.',
+        images: [
+          'https://images.unsplash.com/photo-1566995616802-6e1e0c01c1e0?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1587653929942-b08cff9f2fcf?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Included in guided tour — coach stops here for 90 min',
+        cost:      'Cemetery is free · Included in tour price',
+        tip:       'Allow time at the visitor centre before going to the cemetery — the context makes the walk through the graves profoundly different. The original German bunkers are still embedded in the bluffs above the beach; your guide will point them out. Dress respectfully — the cemetery has a formal atmosphere.',
+      },
+      {
+        time:        '2:30 PM',
+        name:        'Pointe du Hoc',
+        description: 'The clifftop headland between Omaha and Utah beaches where 225 US Army Rangers scaled 30m cliffs under fire to destroy German artillery guns on D-Day — only 90 survived the two-day battle. The site is preserved exactly as it was left in 1944: shell craters pockmark the headland, and the concrete German bunkers sit collapsed and overgrown at the cliff edge. Walking the crater field with the Channel visible beyond is one of the most visceral WWII sites in Europe.',
+        images: [
+          'https://images.unsplash.com/photo-1587653929942-b08cff9f2fcf?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1566995616802-6e1e0c01c1e0?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Included in guided tour — 15 min drive from Omaha',
+        cost:      'Free (NPS managed site)',
+        tip:       'The cliff edge is unfenced in places — stay on marked paths. Wind from the Channel is constant and strong; bring a windproof layer even in May. The view of the Channel from the bunkers is striking and makes the Rangers\' assault comprehensible in a way no photograph does.',
+      },
+      {
+        time:        '4:30 PM',
+        name:        'Bayeux Tapestry',
+        description: 'An embroidered cloth 70m long and 50cm wide, created around 1070, depicting the Norman conquest of England in 58 sequential scenes — an 11th-century graphic novel of astonishing sophistication and detail. It\'s housed in a converted seminary in Bayeux, illuminated in a darkened gallery, and best read with the audio guide that narrates each scene. The Bayeux lace-work border running the entire length contains satirical commentary ignored by many visitors but extraordinary when pointed out.',
+        images: [
+          'https://images.unsplash.com/photo-1566995616802-6e1e0c01c1e0?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Included in guided tour — 20 min from Pointe du Hoc',
+        cost:      '₹1,045 (€11 entry — often included in tour)',
+        tip:       'Take the audio guide (included) — without narration it\'s difficult to follow the story. Photography is not permitted inside. The tapestry is genuinely one of the great surviving medieval artefacts; give it at least 45 minutes. Bayeux itself (the town) was the first French town liberated on D-Day and is remarkably intact.',
+      },
+    ],
+    food:    'Packed lunch from a Paris boulangerie (buy morning of departure) · Norman cider and camembert cheese in Bayeux — Fromagerie at the central market · Coach dinner stop at a routier restaurant en route back',
+    stay:    'Generator Paris, Place du Colonel Fabien (back late evening)',
+    nextDay: '→ Tomorrow: CDG departure — RER B from Gare du Nord, allow 2 hours before flight',
+  },
+
+  {
+    num:       '08',
+    date:      'May 22 — Friday',
+    city:      'Paris — Departure',
+    title:     'CDG Departure',
+    transport: 'RER B → CDG Airport · 35 min from Gare du Nord · Allow 2.5 hours before flight',
+    places: [
+      {
+        time:        '8:00 AM',
+        name:        'Marché d\'Aligre',
+        description: 'Paris\'s most authentic daily market on the eastern edge of the city — a covered hall and outdoor street market running every morning except Monday on Place d\'Aligre in the 12th arrondissement. Produce sellers, fishmongers, cheese vendors, and imported spice stalls crowd the square. It\'s the market that actual Parisian chefs shop at, not tourists, which keeps prices real. A last morning coffee at the Café de la Comète overlooking the market square is the right farewell to Paris.',
+        images: [
+          'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport: 'Metro Line 8 → Ledru-Rollin, walk 5 min',
+        cost:      'Free to visit · Coffee ₹350–₹500',
+        tip:       'Buy a whole camembert, some saucisson, and a small jar of Dijon mustard from the market — French airport food security allows most sealed food items. It\'s a better souvenir than a fridge magnet and costs the same.',
+      },
+    ],
+    food:    'Croissant and café au lait at the market · Airport lunch at CDG (expensive — budget ₹1,200–₹1,800)',
+    stay:    'Departure — CDG → BLR (connection via Gulf hub)',
+    nextDay: null,
+  },
+]
+
+export const TOTAL_PLACES = DAYS.reduce((s, d) => s + d.places.length, 0)

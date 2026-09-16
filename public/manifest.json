@@ -1,0 +1,40 @@
+{
+  "name": "World Tour",
+  "short_name": "World Tour",
+  "description": "Solo trip planner — Japan, Scotland, Norway, England, South Korea. World Tour 2027–2035.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F5F4F0",
+  "theme_color": "#0C0C0C",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Travel Mode",
+      "short_name": "Travel",
+      "description": "Open offline companion for today's trip",
+      "url": "/travel",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Journal",
+      "short_name": "Journal",
+      "description": "Travel memory journal",
+      "url": "/journal",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+    }
+  ]
+}

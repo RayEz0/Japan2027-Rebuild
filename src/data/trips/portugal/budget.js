@@ -1,0 +1,120 @@
+// NOTE: Portugal is the second half of Arc 09 (USA · Portugal).
+// The BLR→LAX flight is on the USA budget.
+// Portugal budget covers: JFK→LIS transatlantic + return OPO/LIS→BLR, and all in-Portugal costs.
+
+export const BUDGET_ITEMS = [
+  {
+    id: 'flights',
+    icon: '✈️',
+    name: 'Flights — JFK → LIS + OPO → BLR',
+    notes: 'Transatlantic JFK→LIS on TAP Air Portugal or Iberia (Economy, Sep 22 overnight). Return OPO or LIS→BLR via hub (Doha/Dubai/Lisbon). Book 12–18 months ahead for best rates. Advance purchase saves 20–35%.',
+    inr: '₹70,000 – ₹1,10,000',
+    min: 70000,
+    max: 110000,
+    pct: 100,
+    category: 'transport',
+  },
+  {
+    id: 'accommodation',
+    icon: '🏨',
+    name: 'Accommodation — 7 nights Portugal',
+    notes: 'Lisbon 3 nights (1908 Lisboa Hotel / Lisboa Pessoa Hotel, ₹2,800–₹4,200/night) + Porto 3 nights (The Passenger Hostel, ₹2,200–₹3,500/night) + Douro Valley 1 night (Quinta de la Rosa, ₹4,500–₹6,500/night). Harvest season — Douro books out early.',
+    inr: '₹18,000 – ₹36,000',
+    min: 18000,
+    max: 36000,
+    pct: 100,
+    category: 'stay',
+  },
+  {
+    id: 'food',
+    icon: '🍽️',
+    name: 'Food — 8 days Portugal',
+    notes: 'Portugal is one of Western Europe\'s most affordable food destinations. Budget: café breakfast ₹300–₹500, market lunch ₹500–₹800, restaurant dinner ₹900–₹1,800. Vegetarian options ubiquitous in Lisbon/Porto; more limited in the Douro. Fado dinner ₹2,500–₹3,200.',
+    inr: '₹14,000 – ₹24,000',
+    min: 14000,
+    max: 24000,
+    pct: 100,
+    category: 'food',
+  },
+  {
+    id: 'transport_inport',
+    icon: '🚂',
+    name: 'In-Portugal Transport',
+    notes: 'Lisbon Metro + Tram 15E to Belém (₹165 each trip) + Rossio→Sintra train (₹235 return) + Fertagus to Setúbal (₹600 return) + Alfa Pendular Lisbon→Porto (₹1,900–₹3,000) + Douro Valley train Porto→Pinhão return (₹1,200–₹1,500 each way) + Porto Metro + local taxis in Arrábida and Douro. Book Alfa Pendular in advance at cp.pt.',
+    inr: '₹8,000 – ₹14,000',
+    min: 8000,
+    max: 14000,
+    pct: 100,
+    category: 'transport',
+  },
+  {
+    id: 'experiences',
+    icon: '🎟️',
+    name: 'Experiences & Entry Tickets',
+    notes: 'Jerónimos Monastery ₹1,100 + Torre de Belém ₹650 + Pena Palace Sintra ₹1,900 + Quinta da Regaleira ₹1,050 + Sintra National Palace ₹1,000 + Livraria Lello ₹550 + Graham\'s Port cellar tour ₹1,800 + Serralves Museum ₹1,500 + Porto Cathedral cloister ₹400 + Gaia cable car ₹900. Book Pena Palace and Quinta da Regaleira well in advance.',
+    inr: '₹10,000 – ₹18,000',
+    min: 10000,
+    max: 18000,
+    pct: 100,
+    category: 'experience',
+  },
+  {
+    id: 'shopping',
+    icon: '🛍️',
+    name: 'Shopping — Azulejos, Cork & Local Products',
+    notes: 'Hand-painted Azulejo tiles from Lisbon shops (₹800–₹2,500 each), cork products (wallets, notebooks), Vinho Verde bottles for gifting, pastéis de nata tins, traditional ceramics from Sintra. LX Factory and Bom Sucesso market for artisan finds.',
+    inr: '₹8,000 – ₹18,000',
+    min: 8000,
+    max: 18000,
+    pct: 100,
+    category: 'shopping',
+  },
+  {
+    id: 'setup',
+    icon: '📱',
+    name: 'eSIM — EU Data Plan',
+    notes: 'EU roaming plan from Airalo (covers Portugal within EU data). If an EU eSIM was purchased for a prior leg (Germany/France), it likely carries over — confirm data remaining before departing the USA. Portugal uses Type F (Schuko) plugs; bring a UK-to-EU adapter.',
+    inr: '₹500 – ₹1,500',
+    min: 500,
+    max: 1500,
+    pct: 100,
+    category: 'setup',
+  },
+  {
+    id: 'buffer',
+    icon: '🛡️',
+    name: 'Emergency Buffer',
+    notes: 'Unexpected costs: missed train connections (Alfa Pendular can sell out, forcing a slower regional train), taxi to airport if Metro delays, medical pharmacy costs, extra Sintra bus tickets, spontaneous experiences (Douro boat cruise, pottery workshop in Alfama).',
+    inr: '₹8,000 – ₹15,000',
+    min: 8000,
+    max: 15000,
+    pct: 100,
+    category: 'setup',
+  },
+]
+
+export const BUDGET_TOTAL = {
+  min: BUDGET_ITEMS.reduce((s, i) => s + i.min, 0),
+  max: BUDGET_ITEMS.reduce((s, i) => s + i.max, 0),
+}
+
+export const BUDGET_CATEGORIES = {
+  transport:  { label: 'Transport',   color: '#D8E6F2' },
+  stay:       { label: 'Stays',       color: '#E8DCC7' },
+  food:       { label: 'Food',        color: '#DCE8DD' },
+  experience: { label: 'Experiences', color: '#F4D6D6' },
+  gear:       { label: 'Gear',        color: '#EFEDE7' },
+  setup:      { label: 'Setup',       color: '#E8E4D0' },
+  shopping:   { label: 'Shopping',    color: '#FDF1EE' },
+}
+
+export const PLANNED_BY_CATEGORY = {
+  transport:  { min: 78000, max: 124000 },
+  food:       { min: 14000, max: 24000 },
+  stay:       { min: 18000, max: 36000 },
+  experience: { min: 10000, max: 18000 },
+  shopping:   { min: 8000,  max: 18000 },
+  gear:       { min: 0,     max: 0 },
+  setup:      { min: 8500,  max: 16500 },
+  other:      { min: 0,     max: 0 },
+}

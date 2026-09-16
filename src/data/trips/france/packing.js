@@ -1,0 +1,95 @@
+export const PACKING_CATEGORIES = [
+  {
+    id:    'france_documents',
+    label: 'Documents & ID',
+    icon:  '📄',
+    items: [
+      { id: 'france_doc_passport',   label: 'Passport (valid > 6 months after May 2031 — required for Schengen)', critical: true  },
+      { id: 'france_doc_visa',       label: 'Schengen visa (France entry — covers entire Arc 05)', critical: true  },
+      { id: 'france_doc_insurance',  label: 'Travel insurance certificate (Schengen requires min €30,000 medical)', critical: true  },
+      { id: 'france_doc_bookings',   label: 'Printed/offline PDFs — flight, hotel, Versailles, Louvre, Eiffel Tower tickets', critical: true  },
+      { id: 'france_doc_idp',        label: 'International Driving Permit (for Loire Valley hire car)', critical: false },
+      { id: 'france_doc_emergency',  label: 'Emergency contacts card — offline; French emergency: 112 / SAMU: 15', critical: false },
+    ],
+  },
+  {
+    id:    'france_tech',
+    label: 'Tech & Electronics',
+    icon:  '🔌',
+    items: [
+      { id: 'france_tec_phone',      label: 'Phone (fully charged before boarding)', critical: true  },
+      { id: 'france_tec_charger',    label: 'USB-C phone charger', critical: true  },
+      { id: 'france_tec_powerbank',  label: 'Power bank 20,000mAh (long museum and city walk days)', critical: true  },
+      { id: 'france_tec_adapter',    label: 'Type E plug adapter × 2 (France uses 2-pin round Schuko / Type C also works)', critical: true  },
+      { id: 'france_tec_camera',     label: 'Camera body + wide-angle lens for architecture (Eiffel, Versailles, Louvre)', critical: true  },
+      { id: 'france_tec_lens_85',    label: '85mm portrait lens (café culture, market scenes, Canal Saint-Martin)', critical: false },
+      { id: 'france_tec_sd',         label: 'Memory cards × 4 (photography-heavy 8-day trip)', critical: false },
+      { id: 'france_tec_cable',      label: 'USB-C cable × 2', critical: false },
+      { id: 'france_tec_earphones',  label: 'Earphones / noise-cancelling (museum audio guides, long flights)', critical: false },
+    ],
+  },
+  {
+    id:    'france_clothing',
+    label: 'Clothing & Layers',
+    icon:  '🧥',
+    items: [
+      { id: 'france_clo_jacket',     label: 'Light waterproof jacket (Paris May rain is unpredictable; Normandy coast is always windy)', critical: true  },
+      { id: 'france_clo_fleece',     label: 'Fleece or light merino sweater (Normandy coast wind; evening chill after 9 PM)', critical: true  },
+      { id: 'france_clo_tshirts',    label: 'T-shirts or light shirts × 4 (18–24°C daytime)', critical: false },
+      { id: 'france_clo_smart',      label: 'One smart casual outfit (Paris restaurants — Parisians dress well in the evenings)', critical: false },
+      { id: 'france_clo_trousers',   label: 'Trousers × 2 (chinos or lightweight, not jeans for hot days)', critical: false },
+      { id: 'france_clo_socks',      label: 'Comfortable walking socks × 6 pairs (Paris days = 18,000+ steps)', critical: true  },
+      { id: 'france_clo_underwear',  label: 'Underwear × 6', critical: true  },
+      { id: 'france_clo_scarf',      label: 'Light scarf (practical in wind; also the most French accessory you can carry)', critical: false },
+    ],
+  },
+  {
+    id:    'france_footwear',
+    label: 'Footwear',
+    icon:  '👟',
+    items: [
+      { id: 'france_foo_walk',       label: 'Broken-in walking shoes / trainers (cobblestones in Montmartre and Marais are brutal on fresh soles)', critical: true  },
+      { id: 'france_foo_smart',      label: 'Smart shoes or clean trainers (evening restaurants; Parisians notice footwear)', critical: false },
+      { id: 'france_foo_flipflops',  label: 'Flip flops for hostel showers', critical: false },
+    ],
+  },
+  {
+    id:    'france_health',
+    label: 'Health & Pharmacy',
+    icon:  '💊',
+    items: [
+      { id: 'france_hea_meds',       label: 'Prescription medications (10+ day supply)', critical: true  },
+      { id: 'france_hea_paracetamol',label: 'Paracetamol + ibuprofen (French pharmacies are excellent but require time)', critical: false },
+      { id: 'france_hea_blister',    label: 'Compeed blister plasters (Versailles gardens = 15km walk; Paris days = 20km)', critical: true  },
+      { id: 'france_hea_sunscreen',  label: 'SPF 30 sunscreen (May Paris sun + Versailles open gardens)', critical: false },
+      { id: 'france_hea_insect',     label: 'Insect repellent (Loire Valley and Normandy fields in May)', critical: false },
+    ],
+  },
+  {
+    id:    'france_toiletries',
+    label: 'Toiletries',
+    icon:  '🪥',
+    items: [
+      { id: 'france_toi_tooth',      label: 'Toothbrush + toothpaste', critical: true  },
+      { id: 'france_toi_deo',        label: 'Deodorant (France is warm in May)', critical: true  },
+      { id: 'france_toi_shampoo',    label: 'Shampoo mini (Generator has them but often run out)', critical: false },
+      { id: 'france_toi_tissue',     label: 'Pocket tissues × 3 (Paris public toilets are inconsistent)', critical: false },
+      { id: 'france_toi_sanitiser',  label: 'Hand sanitiser', critical: false },
+    ],
+  },
+  {
+    id:    'france_apps',
+    label: 'Apps & Navigation',
+    icon:  '📱',
+    items: [
+      { id: 'france_app_gmaps',      label: 'Google Maps — offline: Paris, Tours, Versailles, Loire Valley', critical: true  },
+      { id: 'france_app_citymapper', label: 'Citymapper Paris — real-time Metro, RER, bus with live disruption alerts', critical: true  },
+      { id: 'france_app_sncf',       label: 'SNCF Connect — French rail app for TGV Paris↔Tours booking and e-tickets', critical: true  },
+      { id: 'france_app_louvre',     label: 'Louvre museum app — offline gallery map and artwork navigator', critical: false },
+      { id: 'france_app_translate',  label: 'Google Translate — French offline pack downloaded (menus, signs)', critical: true  },
+      { id: 'france_app_currency',   label: 'XE Currency — EUR to INR (€1 ≈ ₹95)', critical: false },
+    ],
+  },
+]
+
+export const TOTAL_ITEMS = PACKING_CATEGORIES.reduce((s, c) => s + c.items.length, 0)

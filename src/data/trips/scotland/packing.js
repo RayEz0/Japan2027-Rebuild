@@ -1,0 +1,107 @@
+export const PACKING_CATEGORIES = [
+  {
+    id:    'documents',
+    label: 'Documents & Cards',
+    icon:  '🪪',
+    items: [
+      { id: 'doc_passport',   label: 'Passport (min 6 months validity)', critical: true  },
+      { id: 'doc_uk_eta',     label: 'UK ETA — apply at gov.uk/apply-uk-visa (₹1,000 approx)', critical: true  },
+      { id: 'doc_insurance',  label: 'Travel insurance documents + policy number', critical: true  },
+      { id: 'doc_bookings',   label: 'Hostel + car hire confirmation printouts', critical: false },
+      { id: 'doc_emergency',  label: 'Emergency contacts card (offline)', critical: false },
+    ],
+  },
+  {
+    id:    'tech',
+    label: 'Tech & Electronics',
+    icon:  '🔌',
+    items: [
+      { id: 'tec_phone',      label: 'Phone (charged)', critical: true  },
+      { id: 'tec_charger',    label: 'Phone charger (USB-C)', critical: true  },
+      { id: 'tec_powerbank',  label: 'Power bank 20,000mAh (long hike days)', critical: true  },
+      { id: 'tec_adapter',    label: 'UK Type G adapter × 2 (3-pin plug)', critical: true  },
+      { id: 'tec_camera',     label: 'Camera (Insta360 GO 3 / DJI Pocket 3)', critical: false },
+      { id: 'tec_sd',         label: 'Memory cards × 3 (spare)', critical: false },
+      { id: 'tec_cable',      label: 'USB-C cable × 2', critical: false },
+      { id: 'tec_earphones',  label: 'Earphones / noise-cancelling', critical: false },
+    ],
+  },
+  {
+    id:    'clothing',
+    label: 'Clothing & Layers',
+    icon:  '🧥',
+    items: [
+      { id: 'clo_jacket',     label: 'Waterproof jacket with hood (ESSENTIAL — Scotland is wet)', critical: true  },
+      { id: 'clo_thermal_t',  label: 'Thermal base layer top × 2', critical: true  },
+      { id: 'clo_fleece',     label: 'Fleece mid-layer', critical: true  },
+      { id: 'clo_tshirts',    label: 'Merino wool or quick-dry T-shirts × 3', critical: false },
+      { id: 'clo_waterproof_trousers', label: 'Waterproof over-trousers', critical: false },
+      { id: 'clo_jeans',      label: 'Jeans or casual trousers (avoid denim in wet)', critical: false },
+      { id: 'clo_socks',      label: 'Warm wool socks × 5 pairs (Merino preferred)', critical: true  },
+      { id: 'clo_beanie',     label: 'Beanie hat', critical: true  },
+      { id: 'clo_gloves',     label: 'Waterproof gloves or liners', critical: false },
+      { id: 'clo_scarf',      label: 'Neck gaiter or scarf', critical: false },
+    ],
+  },
+  {
+    id:    'footwear',
+    label: 'Footwear',
+    icon:  '🥾',
+    items: [
+      { id: 'foo_boots',      label: 'Waterproof hiking boots (ESSENTIAL — muddy everywhere)', critical: true  },
+      { id: 'foo_casual',     label: 'Casual town shoes or trainers', critical: false },
+      { id: 'foo_flipflops',  label: 'Flip flops (hostel showers)', critical: false },
+    ],
+  },
+  {
+    id:    'outdoor',
+    label: 'Outdoor & Hiking',
+    icon:  '🎒',
+    items: [
+      { id: 'out_daypack',    label: 'Daypack 20–25L (for hike days)', critical: true  },
+      { id: 'out_drybag',     label: 'Dry bag 10L (for camera and documents in rain)', critical: false },
+      { id: 'out_poles',      label: 'Compact trekking poles (optional — helps on Ben Nevis descent)', critical: false },
+      { id: 'out_headlamp',   label: 'Headlamp + spare AAA batteries', critical: false },
+      { id: 'out_towel',      label: 'Quick-dry microfibre towel', critical: false },
+      { id: 'out_bottle',     label: 'Reusable water bottle 1L (tap water is fine in Scotland)', critical: false },
+    ],
+  },
+  {
+    id:    'health',
+    label: 'Health & First Aid',
+    icon:  '💊',
+    items: [
+      { id: 'hea_meds',       label: 'Prescription medications (7+ days supply)', critical: true  },
+      { id: 'hea_paracetamol',label: 'Paracetamol + ibuprofen', critical: false },
+      { id: 'hea_blister',    label: 'Blister plasters (Compeed) — hiking essential', critical: true  },
+      { id: 'hea_antihistamine', label: 'Antihistamines (dust in hostels)', critical: false },
+      { id: 'hea_wipes',      label: 'Antiseptic wipes', critical: false },
+    ],
+  },
+  {
+    id:    'toiletries',
+    label: 'Toiletries',
+    icon:  '🪥',
+    items: [
+      { id: 'toi_tooth',      label: 'Toothbrush + toothpaste', critical: true  },
+      { id: 'toi_deo',        label: 'Deodorant', critical: true  },
+      { id: 'toi_shampoo',    label: 'Shampoo mini (many hostels don\'t provide)', critical: false },
+      { id: 'toi_lipsalve',   label: 'SPF lip balm (wind burn on exposed ridges)', critical: false },
+      { id: 'toi_tissue',     label: 'Pocket tissues × 3 packs', critical: false },
+    ],
+  },
+  {
+    id:    'apps',
+    label: 'Apps & Navigation',
+    icon:  '📱',
+    items: [
+      { id: 'app_gmaps',      label: 'Google Maps — offline areas: Edinburgh, Highlands, Skye downloaded', critical: true  },
+      { id: 'app_w3w',        label: 'What3Words — downloaded offline (essential for remote Highlands)', critical: true  },
+      { id: 'app_mwis',       label: 'MWIS — Mountain Weather Forecast (check daily on hike days)', critical: true  },
+      { id: 'app_weather',    label: 'Met Office or BBC Weather (reliable UK forecast)', critical: false },
+      { id: 'app_currency',   label: 'XE Currency converter', critical: false },
+    ],
+  },
+]
+
+export const TOTAL_ITEMS = PACKING_CATEGORIES.reduce((s, c) => s + c.items.length, 0)

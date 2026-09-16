@@ -1,0 +1,60 @@
+export const TRIP_META = {
+  id:            'italy',
+  country:       'IT',
+  title:         'Italy 2029',
+  style:         'Solo',
+  status:        'active',
+  year:          2029,
+  arcNo:         '03',
+  heroImage:     'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1400&q=70&auto=format&fit=crop',
+  theme:         'Mediterranean Cinema',
+  countries:     ['IT', 'MC'],
+  pillars:       ['photography', 'cafes', 'architecture', 'coastal', 'car-culture'],
+  duration:      14,
+  departure:     '2029-09-15',
+  return_:       '2029-09-28',
+  budgetRange:   { min: 350000, max: 600000, currency: '₹' },
+  budgetDisplay: '₹3.5L – ₹6L',
+  route:         ['Rome', 'Florence', 'Tuscany', 'Como', 'Dolomites', 'Amalfi', 'Monaco'],
+  routeFull:     'BLR → Rome (FCO) → Florence → Tuscany → Como → Dolomites → Amalfi → Monaco (MCM)',
+  departureCity: 'Bengaluru',
+  arrivalCity:   'Rome (FCO)',
+  exitCity:      'Monaco / Nice (NCE)',
+  nights:        13,
+  timezone:      'Europe/Rome',
+
+  accommodation: { types: ['Boutique Hotel', 'Hostel', 'Agriturismo'], rateMin: 3000, rateMax: 6000, currency: '₹', notes: 'Mix of hostels in Rome/Florence, agriturismo in Tuscany, clifftop guesthouse on Amalfi' },
+  camera:        { devices: [{ name: 'Insta360 GO 3', type: 'action', notes: 'Wearable for coastal drives' }, { name: 'DJI Pocket 3', type: 'pocket', notes: 'Cinematic for architecture and landscapes' }], strategy: 'rental', days: 14, provider: 'EU rental provider (TBC)' },
+  sports:        { basketball: null, cars: { spots: [{ name: 'Autodromo di Monza', location: 'Monza, near Milan', description: 'Temple of Speed — F1 circuit accessible by train from Milan', type: 'circuit' }], experiences: [] } },
+
+  savingsGoal:     800000,
+  savingsCurrency: '₹',
+}
+
+export const CITIES = [
+  { name: 'Rome',      nights: 4, color: '#F5E0D0', emoji: '🏛️' },
+  { name: 'Florence',  nights: 3, color: '#E8D5C0', emoji: '🎨' },
+  { name: 'Tuscany',   nights: 1, color: '#E8E0C8', emoji: '🌿', note: 'Agriturismo road trip base' },
+  { name: 'Como',      nights: 1, color: '#D0E0E8', emoji: '🏔️' },
+  { name: 'Dolomites', nights: 1, color: '#D8E8E0', emoji: '⛰️', note: 'Mountain driving day' },
+  { name: 'Amalfi',    nights: 3, color: '#C8D8F0', emoji: '🌊' },
+]
+
+export const QUICK_STATS = {
+  cities:        6,
+  nights:        13,
+  daysInCountry: 14,
+  plannedSpots:  42,
+  mustDo: [
+    'Colosseum at first light — timed entry essential',
+    'Vatican Sistine Chapel ceiling — book weeks ahead',
+    'Ponte Vecchio at sunset, Florence',
+    'Piazzale Michelangelo panorama at golden hour',
+    'Siena Piazza del Campo at midday',
+    'Varenna → Bellagio ferry crossing, Lake Como',
+    'Tre Cime di Lavaredo viewpoint, Dolomites',
+    'Path of the Gods hike (Sentiero degli Dei), Amalfi',
+    'Positano cliffside streets at 7 AM before coaches arrive',
+    'Monaco Monte Carlo harbor walk at midnight',
+  ],
+}

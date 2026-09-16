@@ -1,0 +1,500 @@
+export const DAYS = [
+  {
+    num:       '01',
+    date:      'Oct 12 — Monday',
+    city:      'Shanghai — Arrival',
+    title:     'The Bund at Night',
+    transport: 'BLR → PVG (Air China / IndiGo codeshare) · Maglev from Pudong Airport → Longyang Rd (8 min · ¥50) · Metro Line 2 to People\'s Square (20 min · ¥4)',
+    places: [
+      {
+        time:        '6:30 PM',
+        name:        'The Bund (外滩)',
+        description: 'The iconic 1.5 km waterfront promenade running along the western bank of the Huangpu River, facing Pudong\'s spectacular skyline of Oriental Pearl Tower, Shanghai Tower and Jin Mao. The Bund\'s north side is lined with 52 European-style buildings from the 1920s–30s — banking houses, clubs, and consulates that defined colonial-era Shanghai. At dusk the buildings illuminate gold and the Pudong towers across the water turn blue-white: the definitive photograph of modern China.',
+        images: [
+          'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1574986198381-0d0b3e3d5c6f?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Metro Line 2 to Nanjing East Road, 10-min walk south to the Bund promenade',
+        cost:        'Free',
+        tip:         'Arrive at the north end near Waibaidu Bridge and walk south. Best camera position is opposite the Oriental Pearl Tower, mid-promenade. The crowds thin at 9–10 PM — stay for the lights-on moment at dusk (around 6:45 PM in October).',
+      },
+      {
+        time:        '8:30 PM',
+        name:        'Nanjing Road East Pedestrian Street',
+        description: 'The most famous commercial street in China — a 1.2 km fully pedestrianised boulevard connecting the Bund to People\'s Square, lined with flagship stores, neon signs and night food stalls. The atmosphere after dark is electric without being chaotic: locals shopping, tourists photographing, street performers and roasted chestnut carts at every block. A useful orientation walk on arrival night to feel the city\'s pulse.',
+        images: [
+          'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Walk west from The Bund, 5 min',
+        cost:        'Free',
+        tip:         'The tourist tram on Nanjing Road is avoidable — just walk. The eastern 500 m near the Bund end has the best photography with neon reflections. Watch for street food carts selling jian bing (scallion pancakes) and stinky tofu.',
+      },
+    ],
+    food:    'Yang\'s Dumplings (小杨生煎) on Huanghe Road — pan-fried pork bao with crispy bases, Shanghai\'s best street-food institution · Backup: Jia Jia Tang Bao on Huanghe Lu for soup dumplings open until midnight',
+    stay:    'Hostel or budget hotel near People\'s Square / The Bund area, Huangpu District',
+    nextDay: '→ Next: Yu Garden 8:30 AM before the tour groups arrive — doors open at 9 AM',
+  },
+
+  {
+    num:       '02',
+    date:      'Oct 13 — Tuesday',
+    city:      'Shanghai',
+    title:     'Yu Garden, Old Town & French Concession',
+    transport: 'Metro Line 10 to Yuyuan Garden · Walk Old Town circuit · Metro Line 1 to Shaanxi South Road for French Concession',
+    places: [
+      {
+        time:        '8:30 AM',
+        name:        'Yu Garden (豫园)',
+        description: 'A classical Ming-dynasty garden built in 1559 for the Pan family, covering 2 hectares of rockeries, pavilions, ponds and winding corridors within the old walled city. The zigzag bridge across the lotus pond leads to the Mid-Lake Pavilion teahouse — one of the most photographed structures in China. The Exquisite Jade Rock, a 3.3-tonne perforated limestone boulder from Lake Tai, is the garden\'s centrepiece. Arrive early: by 10 AM tour groups make it genuinely difficult to move.',
+        images: [
+          'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Metro Line 10 to Yuyuan Garden Station, Exit 1, 5-min walk',
+        cost:        '¥40 (₹480)',
+        tip:         'Book tickets online on the WeChat mini-program to avoid queue. Enter at 9 AM sharp. The Huxinting Teahouse on the zigzag bridge is ¥70 for a pot — overpriced but the view is worth one cup.',
+      },
+      {
+        time:        '10:30 AM',
+        name:        'Old Town Shanghai — Fang Bang Road',
+        description: 'The pedestrianised Fang Bang Zhong Lu antiques and craft market runs through the surviving old city south of Yu Garden — a dense alley network of calligraphy shops, jade dealers, Mao-era memorabilia and reproduction porcelain. The Chenghuang Miao (City God Temple) at the centre is an active Taoist temple dating to 1403. The covered arcade along the canal section has the best concentration of independent tea merchants outside Yunnan.',
+        images: [
+          'https://images.unsplash.com/photo-1574986198381-0d0b3e3d5c6f?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Walk south from Yu Garden, 8 min',
+        cost:        'Free (temple ¥10 optional)',
+        tip:         'Bargaining is expected in the antique stalls — open at 60% of the first quoted price. The xiaolongbao stall on the corner of Fang Bang and Anren Street charges ¥12 for 8 dumplings — better value than the tourist restaurants on the main drag.',
+      },
+      {
+        time:        '2:00 PM',
+        name:        'Tianzifang (田子坊)',
+        description: 'A labyrinth of 1920s shikumen (stone-gate house) laneways in the French Concession repurposed as artisan studios, independent cafés, ceramic galleries, and boutique clothing shops. Unlike Xintiandi — which was demolished and rebuilt — Tianzifang\'s alleys are genuinely original, with residents still living above the shops. The narrow passages overhung with laundry and potted plants create a texture of old Shanghai that the tourist brochures promise but most of the city has demolished. Best explored slowly without a map.',
+        images: [
+          'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Metro Line 9 to Dapuqiao Station, Exit 1, 5-min walk',
+        cost:        'Free',
+        tip:         'Wander without a route — the outer lanes (away from the main food corridor) are quieter and more photogenic. Good for portrait photography: the afternoon light from the west hits the laneway walls perfectly around 3–4 PM.',
+      },
+      {
+        time:        '4:30 PM',
+        name:        'Xintiandi & French Concession Walk',
+        description: 'Xintiandi is a reconstructed shikumen block turned into an upscale restaurant and retail precinct — the architecture is authentic 1920s brick and timber but the interiors are modern. It\'s commercialised but pleasant at dusk. The real reward is walking north along Huaihai Road and the side streets: wide plane-tree-lined avenues, Art Deco apartment blocks, French-style cafés, and the quiet lanes around Fuxing Park. The CCP First National Congress Site is on Xingye Road — a historically significant 20-minute stop.',
+        images: [
+          'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Walk north from Tianzifang, 15 min, or Metro Line 10/13 to Xintiandi',
+        cost:        'Free (CCP museum ¥free)',
+        tip:         'Pick up a Manner Coffee (local Shanghai chain, ¥15–20 for an excellent flat white) on Huaihai Road — it\'s significantly better than Starbucks at a third of the price. The plane trees on Wukang Road near the Wukang Mansion create the best late-afternoon light in Shanghai.',
+      },
+    ],
+    food:    'Nanxiang Mantou Dian in Yu Garden Bazaar — the original 1900s xiaolongbao house, queue expected · Lunch alternative: Fu Chun Xiao Long at Fang Bang Road · Dinner: Lost Heaven on Gaolan Road (Yunnan cuisine, French Concession) — book in advance',
+    stay:    'Same as night 1 — Huangpu District or French Concession',
+    nextDay: '→ Next: Pudong skyscrapers. Pre-book Shanghai Tower observation deck online (WeChat).',
+  },
+
+  {
+    num:       '03',
+    date:      'Oct 14 — Wednesday',
+    city:      'Shanghai → Beijing',
+    title:     'Pudong Skyline & Night Train to Beijing',
+    transport: 'Metro Line 2 to Lujiazui · Evening: Metro to Hongqiao or Pudong airport / High-speed G-train or night train to Beijing',
+    places: [
+      {
+        time:        '9:00 AM',
+        name:        'Shanghai Tower Observation Deck (118F)',
+        description: 'At 632 metres, Shanghai Tower is the world\'s second-tallest building and the centrepiece of the Lujiazui cluster. The observation deck on floors 118 and 119 sits at 546 m — higher than the Burj Khalifa\'s observation level — and gives a bird\'s-eye view of the entire Yangtze River delta on a clear day. The tower\'s double-skin twisted form spirals 120 degrees from base to top, and the internal atrium that runs its full height is one of the great architectural experiences in China.',
+        images: [
+          'https://images.unsplash.com/photo-1574986198381-0d0b3e3d5c6f?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Metro Line 2 to Lujiazui, Exit 6, 10-min walk to Shanghai Tower base',
+        cost:        '¥180 (₹2,160)',
+        tip:         'Book online at shanhaixp.com (WeChat) or at the ticket window — mornings on weekdays have shortest queues. Morning visits before 10 AM give clearest sky visibility; October is generally excellent with dry air. Take the double-deck lift at 18 m/s to the top — 55 seconds.',
+      },
+      {
+        time:        '11:00 AM',
+        name:        'Lujiazui Finance District & Bund Walk',
+        description: 'The Lujiazui district across from The Bund is the financial core of modern China — the Oriental Pearl Tower (468 m, 1994), Jin Mao Tower (421 m, 1999), Shanghai World Financial Center (492 m, 2008), and Shanghai Tower (632 m, 2015) stand in a cluster that represents 20 years of economic acceleration. Walking the riverside park below gives the closest ground-level view of all four towers simultaneously. The river ferry to The Bund (¥2) is one of the best value boat rides in China.',
+        images: [
+          'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Walk from Shanghai Tower, 5 min to riverside',
+        cost:        'Free (river ferry ¥2)',
+        tip:         'The Lujiazui riverside park is free and uncrowded in the morning. Take the ferry across to The Bund for a final look at the Pudong skyline from the classic perspective — the 10-minute crossing at ¥2 is underrated.',
+      },
+      {
+        time:        '2:00 PM',
+        name:        'Shanghai Natural History Museum',
+        description: 'Opened in 2015, this is one of the finest natural history museums in Asia — a sinuous building half-submerged in a reflecting pool in Jing\'an Sculpture Park, modelled on the spiral of a nautilus shell. The collections span the Big Bang to present across 12 permanent galleries: the dinosaur hall with a complete Mamenchisaurus skeleton (the longest sauropod in Asia), the evolution corridor, and the ecology exhibits are all world-class. A practical rainy-day backup if the morning is overcast, or a genuine half-day stop.',
+        images: [
+          'https://images.unsplash.com/photo-1574986198381-0d0b3e3d5c6f?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Metro Line 13 to Jing\'an Temple, 8-min walk to museum in Jing\'an Sculpture Park',
+        cost:        '¥30 (₹360) — book online, limited daily entry',
+        tip:         'Free on the first Sunday of each month but queues form at 7 AM. Timed entry tickets via the WeChat mini-program (search 上海自然博物馆). Allow 2–3 hours minimum for the full circuit.',
+      },
+    ],
+    food:    'Dim Sum brunch at Yuyuan Bazaar area · Or: Crystal Jade on Nanjing West Road for Cantonese dim sum · Station food for the train: Seven Eleven at Hongqiao station has decent bento boxes and Jianbing (¥15)',
+    stay:    '→ Night train to Beijing (Z-series sleeper: G-train by day or Z-train overnight — upper berth ¥250–330) OR budget hotel near Beijing South Station on arrival',
+    nextDay: '→ Next: Temple of Heaven. Morning start — opens 6 AM for park, 8 AM for buildings.',
+  },
+
+  {
+    num:       '04',
+    date:      'Oct 15 — Thursday',
+    city:      'Beijing — Arrival',
+    title:     'Temple of Heaven, Lama Temple & Wangfujing Night',
+    transport: 'Arrive Beijing South or Beijing Station · Subway Line 5 to Tiantan Dongmen for Temple of Heaven · Line 5 north to Yonghegong Lama Temple · Line 5/8 to Wangfujing',
+    places: [
+      {
+        time:        '9:00 AM',
+        name:        'Temple of Heaven (天坛)',
+        description: 'Built in 1420 during the Ming dynasty, the Temple of Heaven complex was the sacred site where Chinese emperors annually performed the rites of Heaven — praying for good harvests and the continuation of dynastic legitimacy. The Hall of Prayer for Good Harvests (Qiniandian) is the most recognised circular blue-tiled pavilion in China, set within a vast park of ancient cypress trees. The 360 m long "vermilion steps" elevated walkway connecting the south altar to the north prayer hall is one of the great ceremonial axes in world architecture.',
+        images: [
+          'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Subway Line 5 to Tiantan Dongmen (East Gate), Exit A, 5-min walk to entrance',
+        cost:        '¥30 park + ¥20 buildings combined ¥40 (₹480) — buy combo ticket',
+        tip:         'Enter via the east gate (Tiantan Dongmen), not the south gate — far fewer buses and groups. Early morning the park is used by Beijing residents for tai chi, badminton and erhu practice — the cypress grove atmosphere before 8 AM is exceptional. The Echo Wall at the circular Huanqiuitan altar tests acoustics.',
+      },
+      {
+        time:        '1:00 PM',
+        name:        'Yonghegong Lama Temple (雍和宫)',
+        description: 'Beijing\'s largest functioning Tibetan Buddhist temple, converted in 1744 from an imperial palace to a lamasery under Emperor Qianlong. Five ceremonial halls of increasing sanctity progress north through the complex, culminating in the Wanfu Pavilion — home to an 18-metre tall carved sandalwood statue of Maitreya Buddha, one of the largest wooden statues in the world. The temple operates as an active place of worship; the incense smoke and monks in saffron robes against the red and gold architecture is visually and atmospherically extraordinary.',
+        images: [
+          'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Subway Line 5 north to Yonghegong Station, Exit C, 3-min walk',
+        cost:        '¥25 (₹300)',
+        tip:         'Buy incense at the front gate (3 sticks ¥5) — it\'s expected etiquette to offer at each hall. No photography inside the main halls but the exterior courtyard photography is excellent. The Confucius Temple and Guozijian Imperial Academy are immediately adjacent — combined visit adds 45 min.',
+      },
+      {
+        time:        '5:00 PM',
+        name:        'Wangfujing Street & Night Snack Market',
+        description: 'Wangfujing is Beijing\'s primary pedestrian shopping boulevard — similar function to Nanjing Road in Shanghai but with deeper local character. The Donghuamen Night Market running off the east side is China\'s most famous snack street: scorpion skewers, sea cucumber, silkworm pupae, lamb kidney, century egg, jian bing and baozi in rapid succession. Most of the more extreme items are tourist theatre — the lamb, offal and noodle stalls are the genuine eating. The Wangfujing Dumplings and Night Market is compact and walkable in 30 minutes.',
+        images: [
+          'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Subway Line 1 to Wangfujing, Exit A',
+        cost:        'Free entry · Food ¥30–80 (₹360–960)',
+        tip:         'The night snack street is tourist-focused pricing — ¥25–50 per skewer for novelty items. For good value eating, walk two blocks west to the covered Wangfujing Snack Street side alleys. The Wangfujing Book Building on the main street is worth 20 minutes if you read Chinese.',
+      },
+    ],
+    food:    'Dinner at Wangfujing night market — lamb skewers, jian bing, choudoufu (stinky tofu) · Or: Da Dong Roast Duck on Jinbao Street for Peking duck (the best accessible branch, ¥200–280/person, book ahead)',
+    stay:    'Hutong guesthouse near Drum Tower / Nanluoguxiang or budget hotel near Wangfujing, Dongcheng District, Beijing',
+    nextDay: '→ Next: Forbidden City — pre-book timed entry online via WeChat (mandatory). Opens 8:30 AM.',
+  },
+
+  {
+    num:       '05',
+    date:      'Oct 16 — Friday',
+    city:      'Beijing',
+    title:     'Forbidden City & Jingshan Park Panorama',
+    transport: 'Subway Line 1 to Tiananmen East · Walk through Tiananmen Square · North through Forbidden City · Exit Shenwumen north gate to Jingshan Park',
+    places: [
+      {
+        time:        '8:00 AM',
+        name:        'Tiananmen Square (天安门广场)',
+        description: 'The largest urban public square in the world at 440,000 sq m — framed by the Gate of Heavenly Peace (with Mao\'s portrait) to the north, the Great Hall of the People to the west, and the National Museum of China to the east. The square carries extraordinary historical weight: the proclamation of the People\'s Republic in 1949, the Cultural Revolution rallies, and the 1989 protests all happened here. The Chairman Mao Memorial Hall (free, south end) contains his embalmed body under crystal. Arrive by 7:30 AM for the flag-raising ceremony at sunrise — the timing changes daily.',
+        images: [
+          'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Subway Line 1 to Tiananmen East, Exit A — directly onto the square',
+        cost:        'Free (Mao Mausoleum free, passport required)',
+        tip:         'Arrive at 7:30 AM for sunrise flag-raising — the PLA drill at the Gate of Heavenly Peace flagpole is extraordinarily choreographed. Security is thorough: no large bags, no liquids, passport required. Queue on the east side of the square for shorter wait. Photography of the Gate of Heavenly Peace is best with morning light from the south.',
+      },
+      {
+        time:        '9:00 AM',
+        name:        'Forbidden City — Palace Museum (故宫博物院)',
+        description: 'The largest imperial palace complex in the world — 980 buildings, 8,886 rooms, 72 hectares enclosed within 10-metre walls and a 52-metre moat. Built 1406–1420 under the Yongle Emperor, the Forbidden City served as the imperial court for 24 emperors across the Ming and Qing dynasties until 1912. The central axis running south–north through the Meridian Gate, three outer ceremonial halls, three inner living halls, and the Imperial Garden is the defining spine of Chinese imperial architecture. The Palace Museum\'s collection of 1.8 million objects — bronzes, ceramics, jade, calligraphy and clocks — is one of the world\'s great museum holdings.',
+        images: [
+          'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Walk north from Tiananmen Square through the Meridian Gate (Wumen)',
+        cost:        '¥60 (₹720) — timed entry only, book via WeChat mini-program (故宫门票预约) at least 2 weeks ahead',
+        tip:         'Start at the south (Wumen, Meridian Gate) and walk the entire 960-metre central axis north. Allocate 3.5 hours minimum. The Clock Museum (¥10 extra) in the east wing has the most extraordinary collection of 18th-century European clockwork in Asia. Exit via the north Shenwumen gate directly into Jingshan Park.',
+      },
+      {
+        time:        '1:30 PM',
+        name:        'Jingshan Park — Coal Hill Panorama',
+        description: 'A manmade hill directly north of the Forbidden City, created from the earth excavated for the Palace moat in the 15th century. From the Wanchun Pavilion at the summit (47 m above ground level), the entire central axis of the Forbidden City unfolds southward in a single unobstructed view — the yellow roofs of the outer halls, the inner courts, and the distant Gate of Heavenly Peace at 4 km. This is the single best elevated view of the Forbidden City and is only 15 minutes from the north gate. The tree from which the last Ming Emperor hanged himself in 1644 is marked with a small sign on the east slope.',
+        images: [
+          'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Exit Forbidden City north (Shenwumen), cross Jingshan Front Street, Jingshan Park entrance 2 min',
+        cost:        '¥2 (₹24)',
+        tip:         'The Wanchun Pavilion at the top is a 10-minute walk up the hill. Come here before or after the Forbidden City — the southern view down the palace axis at golden hour (4:30–5:30 PM in October) is extraordinary. Bring a wide-angle lens if you have one.',
+      },
+    ],
+    food:    'Lunch inside Forbidden City: Jingshan Park area stalls (jianbing ¥12) · Dinner: Siji Minfu Roast Duck Restaurant on Dengshikou Street — better value than Da Dong, equally authentic crispy duck · Or: Sihe Yiyuan for Beijing home cooking in a courtyard hutong',
+    stay:    'Same Beijing guesthouse, Dongcheng District',
+    nextDay: '→ Next: Great Wall at Mutianyu. Take the 916 express bus from Dongzhimen at 7:00 AM — first bus fills fast.',
+  },
+
+  {
+    num:       '06',
+    date:      'Oct 17 — Saturday',
+    city:      'Beijing',
+    title:     'Great Wall of China — Mutianyu',
+    transport: '916 Express bus from Dongzhimen Hub → Huairou (1.5h · ¥15) · Local bus H23 → Mutianyu (30 min · ¥5) · Or: hired van from hotel (¥200–300 return shared)',
+    places: [
+      {
+        time:        '8:30 AM',
+        name:        'Great Wall — Mutianyu Section (慕田峪长城)',
+        description: 'The best-preserved section of the Ming-era Great Wall accessible from Beijing — 2.25 km of restored wall with 22 watchtowers, built on a knife-edge ridge in the Huairou mountains 73 km northeast of central Beijing. Mutianyu is significantly less crowded than Badaling (the famous UNESCO section) while being equally dramatic: the wall descends steeply on both sides with forested valleys below, and in October the surrounding trees turn red and gold. The toboggan slide descent (separate ¥100 ticket) is a genuinely thrilling way down and takes 4 minutes of controlled steel sled through the mountain forest.',
+        images: [
+          'https://images.unsplash.com/photo-1608037521244-f1c6c7635194?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Bus 916 from Dongzhimen, then H23 minibus, or private van — total 2h from central Beijing',
+        cost:        '¥65 entry + ¥35 cable car up + ¥100 toboggan down = ¥200 total (₹2,400)',
+        tip:         'Take the cable car up, walk the wall east to tower 20 (most dramatic ridge section), then toboggan down — this is the correct sequence. Leave Beijing by 7 AM to arrive by 9:30 AM before weekend tour groups. The towers at the east end (towers 14–23) are steeper and less crowded than the popular central section. October foliage makes this section exceptional for photography.',
+      },
+    ],
+    food:    'Pack lunch for the Wall (convenience store sandwich + water from hotel) · Dinner: return to Beijing and eat at a hutong restaurant in Nanluoguxiang — Shu Daxia for Sichuan hotpot or Dali Courtyard for Yunnan cuisine in a traditional Beijing courtyard',
+    stay:    'Same Beijing guesthouse, Dongcheng District',
+    nextDay: '→ Next: Summer Palace + 798 Art District. Get early start at Summer Palace (opens 6:30 AM).',
+  },
+
+  {
+    num:       '07',
+    date:      'Oct 18 — Sunday',
+    city:      'Beijing',
+    title:     'Summer Palace, 798 Art District & Sanlitun',
+    transport: 'Subway Line 4 to Beigongmen (Summer Palace north gate) · Taxi/DiDi to 798 Art District · Subway Line 10 to Tuanjiehu for Sanlitun',
+    places: [
+      {
+        time:        '8:00 AM',
+        name:        'Summer Palace (颐和园)',
+        description: 'The masterpiece of Chinese imperial landscape design — a 294-hectare ensemble of pavilions, temples, galleries and gardens built around the vast Kunming Lake and Longevity Hill in northwest Beijing. First constructed in 1750 and rebuilt after destruction by Anglo-French forces in 1860 and 1900, the current palace is primarily the 1902 Qing restoration. The 728-metre Long Corridor running along the northern lake shore is painted with 14,000 individual scenes from Chinese history and mythology — the longest painted corridor in the world. Marble Boat (the notorious pleasure boat built with navy funds by Empress Cixi) is at the western end.',
+        images: [
+          'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Subway Line 4 to Beigongmen Station, Exit B, 2-min walk to north gate',
+        cost:        '¥30 park + ¥30 buildings = ¥60 combined (₹720)',
+        tip:         'Enter via the north gate (Beigongmen) not the east gate — cleaner access to the Long Corridor. Walk the Long Corridor first (west to east), then climb Longevity Hill to the Tower of Buddhist Incense for the lake panorama. Allow 3 hours minimum. Paddle boats on Kunming Lake rent for ¥80/hr — worth it in October.',
+      },
+      {
+        time:        '1:30 PM',
+        name:        '798 Art District (七九八艺术区)',
+        description: 'A decommissioned East German-designed electronics factory complex from the 1950s converted since 2001 into Beijing\'s premier contemporary art district — 60+ galleries, installation spaces, sculpture parks, design shops and cafés within the original Bauhaus industrial buildings. The Pace Beijing, Ullens Center for Contemporary Art (UCCA), and Long March Space are the anchor institutions. The district spans 600,000 sq m and the scale of the industrial heritage — exposed brick, skylights, original factory signage — is as interesting as the art itself.',
+        images: [
+          'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Taxi/DiDi from Summer Palace ¥35–50, 40 min. Or subway Line 14/15 + taxi',
+        cost:        'Free entry to district · Gallery entry ¥20–50',
+        tip:         'UCCA (Ullens Center) is the must-see gallery — the exhibitions are consistently world-class. The outdoor sculpture garden between the UCCA and the main street is free. Many galleries close Monday. The cafés in 798 are reasonable for Beijing — ¥30–40 coffee and snack.',
+      },
+      {
+        time:        '5:00 PM',
+        name:        'Sanlitun & The Village',
+        description: 'Beijing\'s international embassy and bar district, centred on the Sanlitun Taikoo Li open-air retail complex — an excellent example of Beijing\'s contemporary urban design with interconnected glass and stone buildings housing international and Chinese brands. The surrounding streets have Beijing\'s highest concentration of independent bars, international restaurants, and streetwear shops. It\'s the closest Beijing gets to Seoul\'s Hongdae or Shanghai\'s French Concession in terms of young, international energy.',
+        images: [
+          'https://images.unsplash.com/photo-1574986198381-0d0b3e3d5c6f?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Subway Line 10 to Tuanjiehu, 10-min walk to Taikoo Li',
+        cost:        'Free',
+        tip:         'The south block of Taikoo Li has better independent shops and fewer tourists than the north block. For evening drinks, the rooftop bar at The Opposite House hotel (hotel guests + general public) has the best Sanlitun views. Gung Ho Pizza on Sanlitun South Road is unexpectedly excellent late-night food.',
+      },
+    ],
+    food:    'Breakfast: Congee and fried dough sticks (youtiao) from hutong stall near hotel · Lunch: 798 café area · Dinner: Xi\'an Cuisine (西安美食) in Sanlitun for genuine belt noodles and pita bread in lamb broth — order roujiamo + biang biang noodles',
+    stay:    'Same Beijing guesthouse, Dongcheng District',
+    nextDay: '→ Next: High-speed G-train to Xi\'an (4.5h). Beijing West Station. Book tickets on 12306.cn or via WeChat.',
+  },
+
+  {
+    num:       '08',
+    date:      'Oct 19 — Monday',
+    city:      'Xi\'an — Arrival',
+    title:     'Ancient City Wall & Muslim Quarter Night Market',
+    transport: 'G-train from Beijing West Station → Xi\'an North Station (4.5h · ¥400–550) · Metro Line 2 to Beidajie (city centre)',
+    places: [
+      {
+        time:        '3:30 PM',
+        name:        'Xi\'an Ancient City Wall (古城墙)',
+        description: 'The best-preserved city wall in China — a Ming-dynasty fortification completed in 1370 encircling the old city in a 13.74 km circuit, 12 metres high and 15 metres wide at the top. The wall is broad enough to ride a bicycle along its entire perimeter, which takes 1.5–2 hours and gives an extraordinary aerial view of the contrast between the dense old city inside and the modern city expanding outwards. The south gate (Yongning Men) is the grandest and most photographed, with a traditional watchtower and drawbridge mechanism. At sunset the wall turns amber against the city skyline.',
+        images: [
+          'https://images.unsplash.com/photo-1567289781693-7d09cd39a9dc?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Metro Line 2 to Yongningmen (South Gate) or Beidajie (North Gate)',
+        cost:        '¥54 entry + ¥45 bicycle rental (₹1,188 combined)',
+        tip:         'Rent a bicycle at any of the 6 rental points on the wall — deposit ¥200 returned. Cycle anti-clockwise (north first) so you finish at the south gate at sunset for the bell tower backdrop photographs. The wall is widest and most impressive at the south and west gates. Lit dramatically at night — good for a second visit after dinner.',
+      },
+      {
+        time:        '6:00 PM',
+        name:        'Muslim Quarter Night Market (回民街)',
+        description: 'The Huimin Jie (Muslim Quarter) is Xi\'an\'s most atmospheric food district — a dense web of narrow streets in the old city northwest of the Drum Tower, inhabited by the Hui Muslim community descended from Silk Road traders for 1,400 years. The night market streets are lined with stalls selling lamb kebabs (yang rou chuan\'r), hand-pulled noodles (la mian), biang biang noodles (wide flat belt noodles with chilli oil), pita bread soaked in lamb broth (yang rou pao mo), persimmon cakes, pomegranate juice and sesame flatbread (shao bing). One of the greatest street food districts in Asia.',
+        images: [
+          'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1567289781693-7d09cd39a9dc?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Walk from city wall south gate, 20 min northwest through the old city. Or: taxi ¥10',
+        cost:        'Free entry · Food ¥50–120 (₹600–1,440)',
+        tip:         'Yang Rou Pao Mo (lamb broth pita) is Xi\'an\'s signature dish — you tear the bread yourself into tiny pieces, hand the bowl to the cook, and they add broth and meat. The process takes 10 minutes and the result is extraordinary. Follow locals, not tourists — the best stalls are one alley back from the main Beiyuanmen tourist drag.',
+      },
+    ],
+    food:    'Full dinner in Muslim Quarter — Yang Rou Pao Mo at Lao Sun Jia (oldest pao mo restaurant, since 1898) · Persimmon cakes (shi zi bing) for dessert · Pomegranate juice fresh-pressed at street stalls ¥10',
+    stay:    'Budget hotel or guesthouse inside the city walls, Xi\'an — Beidajie or Nanmen (South Gate) area',
+    nextDay: '→ Next: Terracotta Army — earliest bus leaves Xi\'an North Square at 8:30 AM. Pre-book tickets online.',
+  },
+
+  {
+    num:       '09',
+    date:      'Oct 20 — Tuesday',
+    city:      'Xi\'an',
+    title:     'Terracotta Army & Bell Tower Sunset',
+    transport: 'Bus 306 from Xi\'an Railway Station East Square → Terracotta Army site (1h · ¥7) · Return bus · Metro Line 2 to Bell Tower',
+    places: [
+      {
+        time:        '8:30 AM',
+        name:        'Terracotta Army — Mausoleum of Qin Shi Huang (兵马俑)',
+        description: 'Discovered in 1974 by well-diggers, the Terracotta Army is one of the most significant archaeological finds in history — an army of 8,000+ life-size terracotta soldiers, horses and chariots buried to guard the mausoleum of Qin Shi Huang, China\'s first emperor (221–210 BC). Pit 1, the largest at 230 × 62 metres, contains over 6,000 figures in 11 columns — the visual scale of an actual army facing you across the excavation trench is genuinely overwhelming. Pit 2 and Pit 3 are smaller with different troop configurations. The museum displays include original bronze weapons, colour-preserved figures, and the two bronze chariots found separately.',
+        images: [
+          'https://images.unsplash.com/photo-1567289781693-7d09cd39a9dc?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Bus 306 from Xi\'an Railway Station East Square, 1 hour, ¥7. Or tourist bus from Bell Tower ¥20',
+        cost:        '¥120 (₹1,440) — includes all 3 pits + museum. Book online to avoid queue.',
+        tip:         'Book timed entry tickets in advance at ptticket.cn or via WeChat — walk-up queues can be 1.5 hours in October. Arrive at opening (8:30 AM) to photograph Pit 1 before the guided groups arrive. The free audio guide QR code at the entrance is better than the ¥30 handheld device. Allocate 3–4 hours for all three pits plus the museum building.',
+      },
+      {
+        time:        '3:30 PM',
+        name:        'Xi\'an Bell Tower & Drum Tower (钟楼/鼓楼)',
+        description: 'The Bell Tower (Zhonglou) at the exact geographic centre of Xi\'an\'s old city is a 36-metre Ming pavilion sitting on a 8.6-metre elevated brick base straddling the intersection of the four main city avenues. Built in 1384, the original bronze bell was rung to mark the start of each day. Adjacent 250 metres west, the Drum Tower (Gulou) marked the close of each day — together they framed the temporal rhythm of the ancient city. The rooftop terrace of the Bell Tower gives a clear sightline down all four main streets to the city walls, and at sunset the golden light across the old rooftops is spectacular.',
+        images: [
+          'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Metro Line 2 to Beidajie, 5-min walk south to Bell Tower roundabout',
+        cost:        '¥45 Bell Tower + ¥45 Drum Tower, combined ¥50 (₹600)',
+        tip:         'Time the Bell Tower for 4:30–5:30 PM in October for sunset light across the city. The drum performance at the Drum Tower runs at 9 AM, 10:30 AM, 12 PM, 2 PM, 3:30 PM, and 5 PM — it\'s included in the ticket and worth watching once. The underground passage connecting the Bell Tower subway station runs directly under the building.',
+      },
+    ],
+    food:    'Breakfast: Shao bing (sesame flatbread) + jiang (bean paste) from street vendor near hotel ¥8 · Lunch at Terracotta site cafeteria (acceptable, ¥35–50) or packed lunch · Dinner: Biang Biang noodles at Wei Jia Liang Pi on Beiyuanmen — the hand-cut belt noodles with chilli oil are Xi\'an\'s second signature dish',
+    stay:    'Same Xi\'an city wall guesthouse',
+    nextDay: '→ Next: Fly Xi\'an → Guilin (XNN). Direct flight ~2.5h. Book ahead — this route books out in peak season.',
+  },
+
+  {
+    num:       '10',
+    date:      'Oct 21 — Wednesday',
+    city:      'Guilin — Arrival',
+    title:     'Reed Flute Cave & Elephant Trunk Hill at Sunset',
+    transport: 'Fly Xi\'an (XIY) → Guilin (KWL) ~2.5h · Airport bus to city centre ¥20 · Taxi to Reed Flute Cave ¥20',
+    places: [
+      {
+        time:        '2:30 PM',
+        name:        'Reed Flute Cave (芦笛岩)',
+        description: 'A natural limestone cave 5 km northwest of Guilin city, formed over 180 million years with stalactites, stalagmites and crystal columns illuminated by coloured lighting to theatrical effect. The 500-metre circuit through the cave passes through chambers with names like Crystal Palace, Virgin Forest and Dragon Pagoda — the light show is deliberately maximalist but the scale of the formations is genuinely extraordinary. Ancient inscriptions in the cave from Tang dynasty travellers (792 AD) make it the oldest documented tourist site in Guilin.',
+        images: [
+          'https://images.unsplash.com/photo-1535515257180-fd37e6f97827?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Taxi from Guilin city centre ¥20, or local bus 3/58 · Entrance 5 km northwest of city',
+        cost:        '¥75 (₹900)',
+        tip:         'The coloured lights are polarising — some travellers love the theatrics, others find it kitschy. Worth seeing once regardless: the formations are extraordinary. The audio guide app is downloadable in English. Afternoon visits have fewer groups than morning. Allow 1.5 hours.',
+      },
+      {
+        time:        '5:00 PM',
+        name:        'Elephant Trunk Hill (象鼻山)',
+        description: 'The symbol of Guilin — a karst limestone formation at the confluence of the Li River and Peach Blossom River that has naturally eroded into the silhouette of an elephant drinking from the river. The arch at the base of the "trunk" was formed by differential erosion and frames a perfect circular window opening onto the river. Visible from the waterfront park at sunset, the hill turns gold-orange as the light catches the limestone. The park surrounding it is a pleasant riverside walk with willow trees and pavilions.',
+        images: [
+          'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1535515257180-fd37e6f97827?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Taxi from Reed Flute Cave ¥25, 20 min · Or taxi from city centre ¥10',
+        cost:        '¥75 (₹900) — includes park and hill',
+        tip:         'For photography, the best external viewpoint is from the free waterfront promenade immediately south of the park entrance — you get the elephant silhouette against the river without paying the park fee. If you do enter, the sunset from the pavilion on the hill crest is worth the entry.',
+      },
+    ],
+    food:    'Dinner: Guilin rice noodles (桂林米粉) at a local noodle shop — the signature dish, ¥12–18 for a bowl of silky rice noodles in bone broth with pickled vegetables and peanuts · Zhengyang Pedestrian Street for evening exploration and stinky tofu · Try Guilin beer fish (啤酒鱼) — carp cooked in local beer with chilli',
+    stay:    'Budget guesthouse or hostel in Guilin city centre near the Li River waterfront',
+    nextDay: '→ Next: Morning bus to Yangshuo (45 min · ¥25). Leave by 8 AM for best Li River light.',
+  },
+
+  {
+    num:       '11',
+    date:      'Oct 22 — Thursday',
+    city:      'Yangshuo',
+    title:     'Yulong River, Li River Cruise & West Street',
+    transport: 'Bus from Guilin to Yangshuo (45 min · ¥25) · Bamboo raft on Yulong River (arrange through guesthouse) · Return bus or shared van to Guilin for flight',
+    places: [
+      {
+        time:        '8:30 AM',
+        name:        'Yulong River — Bamboo Raft Float',
+        description: 'The Yulong River is a quiet tributary south of Yangshuo with the classic karst mountain scenery of the Guangxi landscape — limestone pinnacles rising 200–400 metres from flat rice paddy plains, with bamboo groves, water buffalo, and ancient arched stone bridges reflected in perfectly still green water. The bamboo raft (mechanised punt) takes 2 hours to drift 9 km downstream between Yulong Bridge and Gongnong Bridge, with the peaks of the Yulong range framing every bend. This is the photograph that defines Guilin — and it\'s almost silent.',
+        images: [
+          'https://images.unsplash.com/photo-1560082200-8cfa61c77d1c?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Arrange through Yangshuo guesthouse or book directly at Yulong Bridge. Taxi from Yangshuo ¥30',
+        cost:        '¥100–120 per raft (holds 2 people) (₹1,200–1,440)',
+        tip:         'Book through your guesthouse for honest pricing — street touts at Yangshuo West Street inflate prices to ¥200+. Morning starts (8–9 AM) have the best light and fewest crowds. Bring sun protection: 2 hours on open water in October sun is deceptive. The Yulong Bridge photograph (raft approaching the medieval stone arch) is the shot to set up.',
+      },
+      {
+        time:        '12:00 PM',
+        name:        'Li River Cruise — Guilin to Yangshuo Stretch',
+        description: 'The Li River between Guilin and Yangshuo is one of the most photographed landscapes on earth — 83 km of continuous karst peak scenery culminating in the Yangshuo basin. The cruise from Xingping Village downstream is the most dramatic section: the 20 RMB note features the exact bend of the river at Xingping with the Camel Hill formation. The water is green-jade coloured from limestone minerals, the peaks rise vertically from the riverbank, and the changing light across the formations through the day makes every hour different. Full cruise takes 4 hours from Guilin, but the Xingping section (shorter boat from Xingping village) is the best value.',
+        images: [
+          'https://images.unsplash.com/photo-1560082200-8cfa61c77d1c?w=900&q=70&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1535515257180-fd37e6f97827?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Short cruise from Xingping: bus from Yangshuo ¥10 to Xingping, local boat ¥100 downstream',
+        cost:        '¥210 full cruise from Guilin (₹2,520) · Or ¥100 short cruise from Xingping (₹1,200)',
+        tip:         'Book the full Li River cruise (Guilin → Yangshuo) in advance at the Guilin Ferry Pier (two companies: Guilin Tourism and Guilin Li River Cruise). Alternatively, the Xingping short boat (¥100, 1.5h) covers the most scenic section and you can take a bus from Yangshuo. Bring cash — no card at the pier.',
+      },
+      {
+        time:        '4:00 PM',
+        name:        'Yangshuo West Street & Moon Hill',
+        description: 'West Street (Xi Jie) is Yangshuo\'s 1,400-year-old main commercial street — 517 metres of flagstone paving lined with cafés, rock-climbing gear shops, arts and crafts vendors, and restaurants catering to the global backpacker crowd that discovered Yangshuo in the 1980s. The atmosphere is cheerfully chaotic with Chinese and international travellers mixing over cold beer and local food. Moon Hill, 8 km south of town, is a karst peak with a perfect circular arch cut through its summit by erosion — a 30-minute hike from the base gives a full view.',
+        images: [
+          'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Walk from wherever you are in Yangshuo. Moon Hill: bicycle ¥20/day from West Street shops',
+        cost:        'Free · Moon Hill ¥20 entry (₹240)',
+        tip:         'Rent a bicycle at West Street (¥20–30/day) and ride south to Moon Hill and the Yulong Bridge area — cycling the Yangshuo valley is one of the best days in China. The karst scenery from road level on a bicycle is completely different from the river and more intimate. Blue Lotus Restaurant on West Street for cold Guilin beers at sunset.',
+      },
+    ],
+    food:    'Lunch: Yangshuo Beer Fish (啤酒鱼) — a local dish of Li River carp cooked with local Liquan beer, chilli and tomato, at any restaurant on West Street ¥60–80 · Dinner: return to Guilin or eat in Yangshuo at Yi Jia Ren Restaurant (homestyle Guangxi cooking, ¥40–60)',
+    stay:    'Backpacker guesthouse in Yangshuo village, or return to Guilin for last night before flight',
+    nextDay: '→ Next: Fly Guilin (KWL) → Guangzhou (CAN) → depart for Seoul (ICN). Check flight timing — may need early morning.',
+  },
+
+  {
+    num:       '12',
+    date:      'Oct 23 — Friday',
+    city:      'Guilin → Guangzhou → Seoul',
+    title:     'Departure Day — Guangzhou Transit',
+    transport: 'Fly Guilin (KWL) → Guangzhou (CAN) (1h) · Airport transit or brief city visit · Fly CAN → Seoul ICN (3.5h)',
+    places: [
+      {
+        time:        '10:00 AM',
+        name:        'Guangzhou Canton Tower (广州塔)',
+        description: 'If the flight connection allows 4+ hours in Guangzhou, the Canton Tower (also called the TV Tower or Little Waist) is China\'s most architecturally distinctive observation tower — a 600-metre latticed hyperboloid structure with a continuous spiral of open-air walkways and an outer observation ring at 450 m. The unique twisted form was designed by Mark Hekkink and Ilse Develop and completed in 2010. The Pearl River waterfront park below is one of Guangzhou\'s best public spaces. Only practical as a layover stop if you have a long connection.',
+        images: [
+          'https://images.unsplash.com/photo-1535515257180-fd37e6f97827?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Metro Line 3 from Guangzhou South Railway Station or Guangzhou Baiyun Airport to Chigang, 5-min walk to tower',
+        cost:        '¥150 (₹1,800) — optional if connection is long',
+        tip:         'Only attempt if your Guangzhou layover is 5+ hours after accounting for metro time and airport re-check. CAN is a large airport and security queues can be 1 hour at peak times. The Pearl River waterfront park below the tower is free and photogenic even without going up.',
+      },
+      {
+        time:        '3:00 PM',
+        name:        'Guangzhou Baiyun International Airport (CAN)',
+        description: 'One of the busiest airports in Asia and a major hub for South China Aviation and China Southern. The Terminal 2 international departure zone has good food options and duty-free. The Guangzhou → Seoul ICN route is well-served by China Southern, Korean Air and Air China — typically 3.5 hours block time. Korea leg of Arc 07 begins on landing.',
+        images: [
+          'https://images.unsplash.com/photo-1574986198381-0d0b3e3d5c6f?w=900&q=70&auto=format&fit=crop',
+        ],
+        transport:   'Airport Expressway Line 3 from city to CAN Terminal 2, 45 min from city centre',
+        cost:        'Flight cost included in budget',
+        tip:         'Arrive at CAN at least 2.5 hours before international departure. Download the China Southern app for mobile boarding pass. Pick up duty-free Moutai baijiu for gifts — considerably cheaper at CAN than anywhere else on this trip. Exchange any remaining CNY before departing.',
+      },
+    ],
+    food:    'Dim sum breakfast at any Guangzhou airport hotel if time allows — Guangzhou is the heartland of Cantonese dim sum, best in the world · Airport: Ajisen Ramen in CAN T2 departure hall for a reliable pre-flight meal',
+    stay:    '→ Flying to Seoul — Korea chapter begins on landing at ICN',
+    nextDay: '→ Arc 07 Korea leg begins: Seoul arrival, check into Hongdae area',
+  },
+]
+
+export const TOTAL_PLACES = DAYS.reduce((s, d) => s + d.places.length, 0)

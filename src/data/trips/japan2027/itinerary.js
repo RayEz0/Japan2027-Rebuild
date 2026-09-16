@@ -1,0 +1,460 @@
+/**
+ * Japan 2027 — Full Itinerary Data
+ * 13 travel days (Day 01–13) = arrival + 11 full days + departure
+ * All locations, images and PRO tips preserved from finalized plan.
+ */
+
+export const DAYS = [
+  {
+    num: '01', date: 'Nov 23',
+    city: 'Tokyo — Arrival',
+    title: 'Shinjuku Night',
+    transport: 'Narita Express → Shinjuku · ~55 min · ¥3,070',
+    places: [
+      {
+        time: '5:00–7:00 PM', name: 'Shinjuku Station Area',
+        description: 'Check-in, orient, Suica setup. The Tokyo of your imagination begins here. Walk the West Exit underpass after dark.',
+        images: ['https://i.pinimg.com/1200x/3a/25/07/3a25077a221e58cc3a7242c1546b586e.jpg','https://i.pinimg.com/736x/78/8d/86/788d86785bdafeafc4dd8d897ff787f2.jpg','https://i.pinimg.com/736x/7b/5c/e8/7b5ce85a4ed3af61cb37b46fbbda1bf2.jpg','https://i.pinimg.com/736x/0d/e2/bb/0de2bb2337433a69ba8752b7088a2257.jpg'],
+        transport: 'From Narita: ~55 min Narita Express', cost: 'Free to explore', tip: 'Get a Suica card at the airport — tap in, tap out, no thinking. Add ¥3,000 to start.',
+      },
+      {
+        time: '7:30–9:00 PM', name: 'Omoide Yokocho',
+        description: 'Smoky yakitori alley. Grilled corn, tofu, skewers. Tiny stools, smoke, old Tokyo.',
+        images: ['https://i.pinimg.com/736x/66/c0/13/66c0132a3fea69586acb77b03931f55c.jpg','https://i.pinimg.com/736x/46/03/43/460343f59504dc87a42fefe5659b6d88.jpg','https://i.pinimg.com/736x/aa/12/e8/aa12e86e11fe683c62e2064a4a08ac48.jpg','https://i.pinimg.com/1200x/cc/b8/3b/ccb83b11aae9aa3d2dd50f062aa1494b.jpg'],
+        transport: '3 min walk from Shinjuku West Exit', cost: '¥1,000–2,500', tip: 'Arrive before 8 PM for a seat. Smoke gets into clothes — worth it.',
+      },
+      {
+        time: '9:30–11:30 PM', name: 'Golden Gai',
+        description: 'Six alleys, 200 tiny bars. Highball, Umeshu, Peach cocktails. No cover at most spots — walk in and ask.',
+        images: ['https://i.pinimg.com/736x/6c/fc/20/6cfc201989cba1093c22b388ea50787b.jpg','https://i.pinimg.com/1200x/8e/ec/57/8eec5741e5b6643e964f20050991570a.jpg','https://i.pinimg.com/1200x/c5/3d/2f/c53d2f33316ddb0685ea26fc759fb185.jpg','https://i.pinimg.com/736x/02/44/fe/0244fe458414bf4ee65656f01ef8003f.jpg'],
+        transport: '5 min walk from Omoide Yokocho', cost: '¥500–800 cover + drinks', tip: 'Most bars are foreigner-friendly. Walk in, ask for a seat, point at the menu.',
+      },
+    ],
+    food: 'Omoide Yokocho — grilled corn, tofu, yakitori · 7-Eleven egg sandwich midnight',
+    stay: 'Shinjuku Guesthouse / Business Hotel',
+    nextDay: '→ Next: Akihabara + Alt Tokyo (12 min JR Yamanote)',
+  },
+  {
+    num: '02', date: 'Nov 24',
+    city: 'Tokyo',
+    title: 'Akihabara + Alt Tokyo',
+    transport: 'JR Yamanote Line all day · IC card',
+    places: [
+      {
+        time: '10:00 AM–12:30 PM', name: 'Akihabara',
+        description: 'Electronics, anime figures, capsule toys, multi-floor arcades. Yodobashi Camera basement for the best capsule selection.',
+        images: ['https://i.pinimg.com/736x/08/45/80/084580de1113edf0aab0f1aeb6f75d5f.jpg','https://i.pinimg.com/736x/28/25/27/2825278f8b4c4ae06c68c4358ed145d7.jpg','https://i.pinimg.com/736x/f0/91/14/f09114e75faeabd9cbd2dd7bf8862ff5.jpg','https://i.pinimg.com/736x/e1/4c/ea/e14cea49a3c33437bfa606fbbe47a3e3.jpg'],
+        transport: '12 min on JR Yamanote from Shinjuku', cost: 'Free to enter · Capsules from ¥100', tip: 'Yodobashi Camera basement for capsules. SuperPotato (retro games) is on the 5th floor of the yellow building.',
+      },
+      {
+        time: '12:30–1:15 PM', name: 'Kanda Myojin Shrine',
+        description: 'Edo-period shrine amid the tech district. Stark contrast. Worth the 10-min walk from Akihabara.',
+        images: ['https://i.pinimg.com/736x/a2/3c/65/a23c659cb047d673b919eda28ad0bb67.jpg','https://i.pinimg.com/1200x/82/9b/ca/829bca1660f6e435f6a3f3f30416237e.jpg','https://i.pinimg.com/1200x/12/d4/68/12d468dbbdf821fa7052224bd1592769.jpg'],
+        transport: '10 min walk from Akihabara', cost: 'Free', tip: 'Tech workers pray here before launches. The portable shrine weighs 2 tonnes.',
+      },
+      {
+        time: '2:00–4:00 PM', name: 'Adidas Shibuya + Daikanyama',
+        description: 'Japan-exclusive colourways at the flagship. Log Road for architecture and calm. Daikanyama Tsutaya Books is a detour worth taking.',
+        images: ['https://i.pinimg.com/736x/68/2f/1b/682f1bcb889a9898a19a174331f2330d.jpg','https://i.pinimg.com/1200x/0b/9d/da/0b9dda384e87b895592c49672ec1b143.jpg'],
+        transport: '15 min JR from Akihabara via Shibuya', cost: 'Personal expense', tip: 'Japan exclusives move fast. Check the app before visiting. Tsutaya Books: architecture/photography floor is world-class.',
+      },
+      {
+        time: '4:30–8:00 PM', name: 'Shimokitazawa',
+        description: "Tokyo's bohemian quarter. Vintage shops, live music venues, cave-cafés. No crowds. Thursday night has the best lineup.",
+        images: ['https://i.pinimg.com/736x/2f/34/c5/2f34c540dcfda52f8fb03e0220643496.jpg','https://i.pinimg.com/736x/88/0a/bf/880abf4e9e3aa0587ff6fcaee9704e23.jpg','https://i.pinimg.com/736x/2d/92/11/2d9211aa89d18cd8f548cd94f78a3d3b.jpg'],
+        transport: '15 min Odakyu Line from Shinjuku', cost: 'Free · drinks ¥600–900', tip: 'Thursday night has live music at multiple venues simultaneously. Village Vanguard downstairs is mandatory.',
+      },
+    ],
+    food: 'Ichiran Ramen (solo booths) · Gyoza no Ohsho · 24hr convenience breakfast',
+    stay: 'Shinjuku',
+    nextDay: '→ Next: Set alarm 5:00 AM · Sensoji at dawn → Disney full day',
+  },
+  {
+    num: '03', date: 'Nov 25',
+    city: 'Tokyo',
+    title: 'Sensoji at Dawn + Disneyland',
+    transport: 'Metro Ginza Line → Asakusa (5:30 AM) · JR Keiyō Line → Maihama (~9:30 AM)',
+    places: [
+      {
+        time: '6:00–7:30 AM', name: 'Sensoji Temple',
+        description: 'Arrive at the Kaminarimon gate before 6:30 AM. Fog, silence, no selfie sticks. The most cinematic Tokyo has to offer — before everyone else wakes up.',
+        images: ['https://i.pinimg.com/1200x/ab/ab/89/abab890d01ce1bd8866a66b4bcee0cd2.jpg','https://i.pinimg.com/736x/68/dd/d3/68ddd3f7f187fe517331fbea126ff48c.jpg','https://i.pinimg.com/736x/70/b1/61/70b1610357ccccb21d0f7bef586ad3d4.jpg','https://i.pinimg.com/1200x/5a/a2/ed/5aa2edd63e2d5aa3bfa21066149d62ef.jpg'],
+        transport: '5:30 AM Metro Ginza Line to Asakusa', cost: 'Free', tip: '6 AM sharp. The Kaminarimon gate with zero people — photograph it before leaving.',
+      },
+      {
+        time: '7:30–8:30 AM', name: 'Nakamise Street',
+        description: 'Ningyo-yaki fresh off the iron. Sembei crackers, matcha souvenirs. Empty and golden-lit at this hour.',
+        images: ['https://i.pinimg.com/1200x/a9/e5/f3/a9e5f3962d0f7603880c9e302a1b6251.jpg','https://i.pinimg.com/1200x/2e/71/3a/2e713a0c0c5cdb493618bb6ee7dbf0d1.jpg'],
+        transport: 'Directly in front of Sensoji Gate', cost: 'Souvenirs ¥300–2,000', tip: 'Ningyo-yaki (fish-shaped cakes) fresh off the iron — ¥200. Best at the third stall on the left.',
+      },
+      {
+        time: '10:00 AM–9:30 PM', name: 'Tokyo Disneyland',
+        description: 'Full day with Disney Premier Access (skip-the-line) for 4 rides. Stay for the Electrical Parade after dark — the unmissable moment.',
+        images: ['https://i.pinimg.com/736x/d8/bf/15/d8bf15b8036f711e7cbc814246cfa814.jpg','https://i.pinimg.com/736x/8f/fd/e1/8ffde1df804919e5f96d3e649de61402.jpg','https://i.pinimg.com/736x/07/27/2d/07272df566fd504f2061ab10a6f96e0c.jpg','https://i.pinimg.com/1200x/8e/8f/64/8e8f646680de2eada4d88dd6a2f5c204.jpg'],
+        transport: 'JR Keiyō Line from Tokyo Station to Maihama · ~20 min · ¥222', cost: '¥9,400 entry + Premier Access ¥18,000–30,000', tip: 'Buy Premier Access in-park via Disney app on arrival. Electrical Parade starts 9:00 PM — position near the hub.',
+      },
+    ],
+    food: 'Disney park food — corn dog, gyoza bun, popcorn buckets · CoCo Ichibanya on way home',
+    stay: 'Shinjuku',
+    nextDay: '→ Next: Harajuku → Shibuya + Shibuya Sky sunset',
+  },
+  {
+    num: '04', date: 'Nov 26',
+    city: 'Tokyo',
+    title: 'Shibuya + Harajuku Day',
+    transport: 'JR Yamanote Line · Harajuku → Shibuya (2 stops)',
+    places: [
+      {
+        time: '8:00–9:30 AM', name: 'Meiji Shrine',
+        description: 'Forested shrine in central Tokyo. Arrive early — the cedar path is completely silent before 9 AM. Misty in November.',
+        images: ['https://i.pinimg.com/236x/5a/f6/d1/5af6d1684af04ff0b735464f7f3245c2.jpg','https://i.pinimg.com/736x/e1/ce/6f/e1ce6fdfc2d7465607ae0b2e16adae77.jpg'],
+        transport: '1 min walk from Harajuku Station', cost: 'Free', tip: 'Arrive before 8 AM. The 700m cedar path has near-zero sound.',
+      },
+      {
+        time: '10:00 AM–12:00 PM', name: 'Takeshita Street',
+        description: 'Harajuku youth culture. Crepes, secondhand fashion, capsule vending. Also check Omotesando Hills for streetwear.',
+        images: ['https://i.pinimg.com/736x/8e/ad/ae/8eadaedfbeb893af74e07974404566a3.jpg','https://i.pinimg.com/1200x/be/5e/ee/be5eeeaf61eebb30f4d7141d4570711f.jpg','https://i.pinimg.com/736x/ca/1f/91/ca1f9187c9eb8cc0674692f3ad91dd8d.jpg'],
+        transport: '1 min walk from Harajuku Station (JR Yamanote)', cost: 'Free · food ¥400–800', tip: 'Kilfebon crêpes (line moves fast). Marion Crêpes (classic).',
+      },
+      {
+        time: '1:00–3:00 PM', name: 'Shibuya Crossing',
+        description: "The world's busiest intersection. Shoot from Mag's Park Level 2 for the full aerial frame. Peak energy at rush hour.",
+        images: ['https://i.pinimg.com/736x/95/94/7e/95947e641111e19a47a94fa50e54d988.jpg','https://i.pinimg.com/736x/97/fd/72/97fd7224a59d8bd2436cb27ab18a4002.jpg','https://i.pinimg.com/1200x/0f/7c/4c/0f7c4c6ff0c1a8de0319077ff1f2d01d.jpg'],
+        transport: '2 min walk from Shibuya Station (Hachiko Exit)', cost: 'Free', tip: "Mag's Park Level 2 or Starbucks window for aerial view. Cross it in both diagonal directions.",
+      },
+      {
+        time: '3:30–5:00 PM', name: 'Miyashita Park',
+        description: 'Rooftop skate park, bars, and shops built into a Shibuya overpass. Great golden hour spot.',
+        images: ['https://i.pinimg.com/1200x/da/f5/ed/daf5ed0a6510637a4dd0952cfbda9abe.jpg','https://i.pinimg.com/736x/94/4a/25/944a254b664522c3916b6441c536bc67.jpg'],
+        transport: '5 min walk from Shibuya Crossing', cost: 'Free to enter · food ¥800–1,500', tip: 'Top floor skate ramp is free to watch. Great position for golden hour looking back at Shibuya.',
+      },
+      {
+        time: '5:00–6:00 PM', name: 'Shibuya Sky',
+        description: 'Open-air rooftop observation. Book 2+ months ahead. Sunset slot: you get orange sky AND city lights.',
+        images: ['https://i.pinimg.com/1200x/30/ac/a2/30aca2c345fa88dd036ca98331b76665.jpg','https://i.pinimg.com/736x/c2/0c/d0/c20cd06365eb1e44cce3f287a19c2766.jpg'],
+        transport: '5 min from Shibuya Station · Scramble Square Tower', cost: '¥2,000 · Book online 2 months ahead', tip: '5:30–6 PM slot: sunset into city lights. The rooftop has a glass floor section.',
+      },
+      {
+        time: '6:30–7:15 PM', name: 'Ochanomizu Bridge',
+        description: 'Hijiribashi Bridge — best multi-train crossing view in Tokyo. Wait for multiple trains simultaneously. Blue hour in November is perfect.',
+        images: ['https://i.pinimg.com/736x/f8/65/fc/f865fcdeb11b544a7e28eb4b146fe1a3.jpg','https://i.pinimg.com/736x/af/11/77/af1177319ef94ce3508baf840c87ba95.jpg'],
+        transport: '35 min from Shibuya Sky via JR Chuo Line', cost: 'Free', tip: 'Hijiribashi Bridge, west-facing. Multiple train lines cross every 10–15 min. Blue hour window: 6:15–7:00 PM.',
+      },
+    ],
+    food: "Genki Sushi (conveyor belt) · Flipper's Pancakes — Harajuku · Convenience store evening run",
+    stay: 'Shinjuku',
+    nextDay: '→ Next: Recovery day + Garden + Basketball evening',
+  },
+  {
+    num: '05', date: 'Nov 27',
+    city: 'Tokyo — Recovery',
+    title: 'Garden + Don Quijote + Basketball',
+    transport: 'Tokyo Metro easy day · No rush · Late start',
+    places: [
+      {
+        time: '10:00–11:30 AM', name: 'Kiyosumi Teien Garden',
+        description: 'Edo-era landscape garden. Stepping stones, carp pond, stone lanterns. Almost no tourists. Best light is late morning in November.',
+        images: ['https://i.pinimg.com/736x/95/50/13/955013f5d70faf8739d94f444d4e1339.jpg','https://i.pinimg.com/736x/57/f2/4f/57f24fa1308755ce1ae6a5b14ef9ee10.jpg','https://i.pinimg.com/1200x/2e/dd/bf/2eddbfe950e3cac5dc8651df8cae335f.jpg'],
+        transport: '10 min on Tokyo Metro Hanzomon Line · Kiyosumi-Shirakawa Stn', cost: '¥150', tip: 'The stepping stones across the pond are the experience. Almost no tourists on a weekday.',
+      },
+      {
+        time: '1:00–3:30 PM', name: 'Don Quijote Shinjuku',
+        description: 'Multi-floor discount megastore. Watches, snacks, electronics, souvenirs, quirky Japan goods.',
+        images: ['https://i.pinimg.com/1200x/6f/26/d3/6f26d3d31e9e1d554ae3c2a192a1cadf.jpg','https://i.pinimg.com/736x/d3/b9/b6/d3b9b68a29c4531b375f84a206ec545d.jpg'],
+        transport: '8 min walk from Shinjuku Station East Exit', cost: 'Tax-free on purchases ¥5,000+ with passport', tip: 'Bring passport for consumption tax exemption (8–10% off). Also: 100-yen surprise bags, matcha Kit Kats in bulk.',
+      },
+      {
+        time: '3:30–5:30 PM', name: 'Omotesando Hills',
+        description: "Tokyo's answer to Rodeo Drive. Japan-exclusive streetwear. Seiko boutique on Omotesando Dori for the cleanest watch shopping experience.",
+        images: ['https://i.pinimg.com/736x/74/56/2d/74562d7ab13df261f126beb80a7cf529.jpg','https://i.pinimg.com/1200x/4c/60/be/4c60bed5645dc2a01215f5b7cd7c1a64.jpg'],
+        transport: '5 min walk from Harajuku or Omotesando Station', cost: 'Free to enter · personal expense', tip: 'Supreme, APC, A Bathing Ape flagship all within 10 min walk.',
+        optional: false,
+      },
+      {
+        time: '8:00–10:00 PM', name: 'Indoor Pickup Basketball',
+        description: 'Indoor courts. Local players join in. Pure social pickup energy — best played on a rest day when legs are fresh.',
+        images: ['https://i.pinimg.com/736x/47/8a/4d/478a4d9600fc8128575b480f0e28fd4c.jpg','https://i.pinimg.com/736x/9e/07/6a/9e076a8882ae0c6f1c441fd730c90b8b.jpg'],
+        transport: '25–35 min from Shinjuku via metro', cost: '¥1,000–2,000', tip: 'Ask court staff about pickup games. Most players are intermediate and welcoming.',
+      },
+    ],
+    food: 'Halal Guys Shinjuku · Omoide Yokocho revisit · Post-basketball ramen',
+    stay: 'Shinjuku',
+    nextDay: '→ Next: Last Tokyo day + GTR Night 8:30 PM',
+  },
+  {
+    num: '06', date: 'Nov 28',
+    city: 'Tokyo — Last Day',
+    title: 'Omotesando + GTR Night',
+    transport: 'Walk / Metro morning · Hotel pickup 8:30 PM for GTR',
+    places: [
+      {
+        time: '11:00 AM–1:30 PM', name: 'Shibuya Scramble Square',
+        description: 'Shibuya Loft, fashion brands, stationery. The 46F observation lounge has views without paying for Sky twice.',
+        images: ['https://i.pinimg.com/736x/95/94/7e/95947e641111e19a47a94fa50e54d988.jpg','https://i.pinimg.com/736x/c2/0c/d0/c20cd06365eb1e44cce3f287a19c2766.jpg'],
+        transport: 'Inside Shibuya Station complex · East Tower', cost: 'Free to explore floors', tip: 'Ground floors: Shibuya Loft, fashion brands, stationery.',
+      },
+      {
+        time: '8:30–11:30 PM', name: 'Full JDM / GTR Experience',
+        description: 'Hotel pickup from Shinjuku. Route: Tokyo Expressways → Rainbow Bridge → Daikoku PA stop (JDM cars gathered) → Drop-off. This is non-negotiable.',
+        images: ['https://i.pinimg.com/736x/3a/e5/26/3ae52603bbaf2e273d04881b579f4c4a.jpg','https://i.pinimg.com/736x/95/73/21/9573219759f66ca0e7520537d3dd29f3.jpg','https://i.pinimg.com/736x/68/3e/4f/683e4fbd732d068106e2bec29e3a9a77.jpg','https://i.pinimg.com/736x/93/34/17/933417891630522bcf421a313fb95149.jpg'],
+        transport: 'Hotel pickup from Shinjuku — they come to you', cost: '¥15,000–25,000 per car', tip: 'Book via Tokyo GT on Instagram DM. GTR, Supra, NSX — depends on booking. Non-negotiable for car people.',
+      },
+    ],
+    food: 'Ichiran Ramen last run · Convenience store final snack haul · Packing night',
+    stay: 'Shinjuku — Last Tokyo night. Pack before GTR.',
+    nextDay: '→ Next: Leave 5:00 AM sharp · Fuji → drive Kyoto',
+  },
+  {
+    num: '07', date: 'Nov 29',
+    city: 'Mt Fuji → Kyoto',
+    title: 'Fuji Road Trip + Drive to Kyoto',
+    transport: 'Rental car from Shinjuku · Leave 5:00 AM sharp · Chuo Expressway · Drive to Kyoto evening',
+    places: [
+      {
+        time: '6:00–6:45 AM', name: 'Lawson Kawaguchiko',
+        description: 'Iconic convenience store with Fuji directly behind it. Golden hour window is exactly 20 minutes. Be here before 6:15 AM.',
+        images: ['https://i.pinimg.com/736x/f0/60/cc/f060ccb9109cada6270c93b139a8873a.jpg','https://i.pinimg.com/736x/88/30/a2/8830a2aa591dc0d6a01d65967daa1fcd.jpg','https://i.pinimg.com/736x/58/f2/c2/58f2c2f2ba5fae596e710e3aafb2186f.jpg','https://i.pinimg.com/1200x/49/d1/4b/49d14b264048304a40f058266fba0665.jpg'],
+        transport: 'First Fuji stop · 5 min from Chuo Expressway Kawaguchiko exit', cost: 'Snacks ¥300–600', tip: 'Position: stand with the store to your back, Fuji in frame. Golden hour is 15–20 min. Arrive before 6:15 AM.',
+      },
+      {
+        time: '7:15–8:30 AM', name: 'Lake Kawaguchi',
+        description: 'Most accessible Fuji Five Lake. Mirror-flat in early morning — the reflection of Fuji on the water. Lakeside path for the best unobstructed frame.',
+        images: ['https://i.pinimg.com/736x/f4/1b/44/f41b4490b3f32c92364cb684b0adb60e.jpg','https://i.pinimg.com/736x/a4/b8/fe/a4b8fe948bf17eca8409e4602b430f59.jpg','https://i.pinimg.com/1200x/6a/72/b8/6a72b8dd84e39b5ec9f69e6893aac027.jpg'],
+        transport: '15 min drive east from Lawson', cost: 'Free · cafés open from 9 AM', tip: 'Oishi Park is on the north shore — the clearest Fuji composition with no buildings in frame.',
+      },
+      {
+        time: '8:45–10:00 AM', name: 'Oishi Park',
+        description: 'North shore of Lake Kawaguchi. Fuji framed perfectly. Lowest angle, cleanest composition — this is the landscape shot of the trip.',
+        images: ['https://i.pinimg.com/736x/34/87/a5/3487a5bc845ac13366faddc9d9b26ad0.jpg','https://i.pinimg.com/736x/ad/a1/7f/ada17fba4ac385641d0d56572e06eb39.jpg','https://i.pinimg.com/736x/4e/ee/ee/4eeeee0b73afdb4ec573dbfbd7e0a34a.jpg','https://i.pinimg.com/1200x/7c/76/cd/7c76cdb3d2c643fd6cefb69ca2b051e0.jpg'],
+        transport: '10 min drive from Lake Kawaguchi north shore', cost: 'Free', tip: 'Face north. December: late autumn foliage still possible. Best shot: wide angle, stay low.',
+      },
+      {
+        time: '10:30–11:15 AM', name: 'Starbucks Kawaguchiko',
+        description: 'The Fuji-view Starbucks. Floor-to-ceiling windows facing the mountain. Matcha latte with Fuji framed behind — best coffee stop in Japan by situation alone.',
+        images: ['https://i.pinimg.com/736x/1e/22/a9/1e22a93fa9d31b84709478d762179f93.jpg','https://i.pinimg.com/1200x/31/14/37/311437018e74c7ac12898cf099a774e5.jpg','https://i.pinimg.com/1200x/f1/f9/c5/f1f9c51c7f85431cd2b514dbcdbcef77.jpg'],
+        transport: '5 min drive from Oishi Park north shore', cost: '¥600–900', tip: 'Floor-to-ceiling windows face Fuji directly. 10–15 min max — it gets crowded fast.',
+      },
+      {
+        time: '1:15–2:00 PM', name: 'Lake Yamanaka',
+        description: 'Largest Fuji Five Lake. Eastern shore has the clearest mountain reflection.',
+        images: ['https://i.pinimg.com/736x/fc/a3/5d/fca35dd29891618dfa4fd5e73210aa01.jpg','https://i.pinimg.com/736x/16/17/48/16174818d92220dddc119eae039c3708.jpg'],
+        transport: '15 min drive', cost: 'Free · swan boat ¥800', tip: 'Rent a swan boat from the northeast shore for the water-level Fuji shot.',
+      },
+      {
+        time: '2:30–3:30 PM', name: 'Honcho Street — Fujiyoshida',
+        description: 'Historic old town street with stone lanterns leading directly to Fuji at the road end. Last Fuji photo stop before the highway to Kyoto.',
+        images: ['https://i.pinimg.com/1200x/b1/8d/ab/b18dab834cdc3068dce66c7a2be1dbe4.jpg','https://i.pinimg.com/1200x/8b/0f/6d/8b0f6daefce4555f4f5c865ab43de7c2.jpg'],
+        transport: '10 min drive from Lake Yamanaka', cost: 'Free', tip: 'Walk the full length. Stone lanterns lead the eye directly to Fuji at the far end.',
+      },
+    ],
+    food: 'Houtou Fudou — thick flat-noodle miso hotpot (Fuji regional specialty) · Drive-through convenience snacks',
+    stay: 'Machiya Guesthouse — Gion / Higashiyama Kyoto (arrive ~9–10 PM)',
+    nextDay: '→ Next: Kyoto Core day · drop rental car at Kyoto Station',
+  },
+  {
+    num: '08', date: 'Nov 30',
+    city: 'Kyoto',
+    title: 'Kyoto Core + Nishiki + teamLab',
+    transport: 'Drop rental car at Times Car Kyoto Station · Walk + bus all day',
+    places: [
+      {
+        time: '6:00–8:00 AM', name: 'Gion Walk',
+        description: 'Preserved Edo townscape. Machiya wooden houses, stone lanterns, cobbled Hanamikoji alley. 5:30–7 AM is pristine.',
+        images: ['https://i.pinimg.com/1200x/28/31/da/2831da0f8a4b18fde25867ef90e66207.jpg','https://i.pinimg.com/736x/d5/fb/7d/d5fb7dfd115d3bfc64df626953400340.jpg','https://i.pinimg.com/736x/92/81/17/9281173597f54710f4182e242f3c9f5d.jpg'],
+        transport: '20 min taxi from Kyoto Station after rental car drop', cost: 'Free to walk', tip: 'Hanamikoji alley. 5:30–7 AM. Walk slowly.',
+      },
+      {
+        time: '8:30–9:30 AM', name: 'Starbucks Ninenzaka',
+        description: 'Inside a 100-year-old machiya. No photos inside — just sit with the matcha latte and the beams. One of the best Starbucks on earth.',
+        images: ['https://i.pinimg.com/736x/1e/05/60/1e0560a25d4e1adda1ae39bf2ef873e6.jpg','https://i.pinimg.com/736x/5d/0e/ed/5d0eede660e88063019199ae9b44d9d9.jpg'],
+        transport: '5 min walk from Gion area', cost: '¥700–900', tip: 'No photography inside. The interior is a restored 100-year-old wooden machiya.',
+      },
+      {
+        time: '10:00 AM–12:30 PM', name: 'Nishiki Market',
+        description: "Kyoto's Kitchen — 400-year-old covered market. Grilled skewers, fresh tofu, pickles, wagashi, matcha soft serve. Budget 2+ hours.",
+        images: ['https://i.pinimg.com/736x/60/42/27/60422768cbd7c992c76015f11d10f234.jpg','https://i.pinimg.com/1200x/59/52/91/5952914a33852edd156a0350c9895c3d.jpg'],
+        transport: '10 min walk from Gion area · Runs east-west off Shijo Street', cost: 'Street food ¥200–800 · Free to browse', tip: '400-year-old covered market. Must: fresh yudofu, matcha soft serve at Tsujiri, tamagoyaki on skewer.',
+      },
+      {
+        time: '7:00–9:00 PM', name: 'teamLab Borderless Kyoto',
+        description: 'Fully immersive digital nature art — no boundaries between rooms. The 2027 Kyoto installation. Book tickets 2+ months ahead. Go to the last time slot.',
+        images: ['https://i.pinimg.com/736x/ee/e0/75/eee0759f31d218975578b20cee7df648.jpg','https://i.pinimg.com/736x/f0/7a/c7/f07ac7e0bd5dd61c4848775103ff7b04.jpg','https://i.pinimg.com/1200x/d3/fe/f2/d3fef234db54c78e079179d0a2d39e42.jpg'],
+        transport: 'Taxi from Nishiki area · ~25 min', cost: '¥3,800–4,500 · Book online 2+ months ahead', tip: 'No fixed rooms, art flows between spaces. Bring comfortable footwear — you walk 2+ hours.',
+      },
+    ],
+    food: 'Nishiki Market skewers + tofu · Tsujiri matcha parfait · Dinner near Gion',
+    stay: 'Machiya Guesthouse — Gion',
+    nextDay: '→ Next: Set alarm 5:30 AM · Fushimi Inari at 6 AM',
+  },
+  {
+    num: '09', date: 'Dec 1',
+    city: 'Kyoto — East',
+    title: 'Fushimi Inari + East Kyoto',
+    transport: 'JR Nara Line from Kyoto Station (10 min) · Walk all day',
+    places: [
+      {
+        time: '6:00–8:30 AM', name: 'Fushimi Inari Taisha',
+        description: '10,000 vermillion torii gates through a forested mountain. Arrive at 6 AM — the upper trail past Yotsutsuji junction is completely empty. The lower gates are for photos; the upper is for experience.',
+        images: ['https://i.pinimg.com/736x/22/7b/01/227b019ef6d17aae2373f50250ae20b1.jpg','https://i.pinimg.com/736x/47/ee/a8/47eea8d2ec904d9f35e57862f480157e.jpg','https://i.pinimg.com/736x/ff/cb/df/ffcbdff372987606bcc1afeb08c1a334.jpg','https://i.pinimg.com/736x/72/8f/88/728f88d4c9f473b7e031a252da0c4fab.jpg'],
+        transport: 'JR Nara Line from Kyoto Station · 5 min · Inari Station', cost: 'Free · 24 hours', tip: '6 AM: the lower gates have fog and zero crowd. Walk past Yotsutsuji junction (30 min up) — the upper trail has almost no one.',
+      },
+      {
+        time: '10:00–11:30 AM', name: 'Tofuku-ji Temple',
+        description: 'One of the great Zen temples. November maple foliage in the Tsuten-kyo bridge garden is world-class. Less visited than Fushimi.',
+        images: ['https://i.pinimg.com/1200x/5e/d1/e9/5ed1e9b7c43d84c89eb3844bbb3f6b1a.jpg','https://i.pinimg.com/736x/75/d8/c3/75d8c318dfdf8d9e2d94cc2f89e35126.jpg'],
+        transport: '10 min walk from Fushimi Inari or JR Tofukuji Station', cost: '¥600', tip: "Tsuten-kyo Bridge over the maple gorge. Late November: final red leaves still clinging.",
+      },
+    ],
+    food: 'Fushimi Inari street stalls — inari-zushi, matcha · Soba at Tofuku-ji area',
+    stay: 'Machiya Guesthouse — Gion',
+    nextDay: '→ Next: Arashiyama · Leave hotel 7 AM · Randen Line',
+  },
+  {
+    num: '10', date: 'Dec 2',
+    city: 'Kyoto → Osaka',
+    title: 'Arashiyama + Check In Osaka',
+    transport: 'Randen Line · Leave hotel by 7 AM · Bus/train to Osaka evening',
+    places: [
+      {
+        time: '7:00–8:00 AM', name: 'Adashino Bamboo Grove',
+        description: 'Dawn light through the grove is completely different. No crowds at this hour. Bring the camera on the right setting.',
+        images: ['https://i.pinimg.com/1200x/96/ca/49/96ca49f38f08554d568b5ec77cbd860f.jpg','https://i.pinimg.com/1200x/71/64/49/716449f6567177e902ecc4dedd5b2b8e.jpg','https://i.pinimg.com/1200x/ed/64/25/ed642567be18d17b14e67529c1d5bfcf.jpg'],
+        transport: 'Bus or taxi from Arashiyama town · 20 min', cost: 'Free', tip: 'This is NOT the main tourist bamboo path. Zero ticket booths, zero crowds, genuinely eerie atmosphere.',
+      },
+      {
+        time: '10:00–11:00 AM', name: '% Arabica Arashiyama',
+        description: 'Best coffee in Kyoto. Open-air riverside counter. Queue moves fast. Drink it by the Oi River.',
+        images: ['https://i.pinimg.com/1200x/6c/4b/b2/6c4bb2e0d1c8def4521e7bcb43e49590.jpg','https://i.pinimg.com/736x/f5/9e/d3/f59ed3021993ed829befc1231f39d392.jpg'],
+        transport: '15 min walk toward the Togetsukyo Bridge from the temple', cost: '¥600–800', tip: 'Latte only. No food. Queue moves in 10 min. Drink it standing by the Oi River.',
+      },
+      {
+        time: '1:00–3:00 PM', name: 'Kimono Forest',
+        description: '300 illuminated kimono poles lining the path between Randen Arashiyama Station and the Togetsu bridge. Magical in both daylight and after dark.',
+        images: ['https://i.pinimg.com/1200x/a9/fd/4c/a9fd4c64864fdd8d64ab4e63c4e2b455.jpg','https://i.pinimg.com/1200x/12/16/22/1216223deb4248bc6d8358918ed512df.jpg'],
+        transport: 'Adjacent to Randen Arashiyama Station', cost: 'Free', tip: '300 cylindrical acrylic poles printed with kimono patterns. Best after dusk when illuminated.',
+      },
+    ],
+    food: 'Arashiyama Yoshimura — fresh soba with mountain gorge view · Osaka check-in dinner: Namba street food',
+    stay: 'Namba / Dotonbori Hostel or Business Hotel — Osaka base for last 3 nights',
+    nextDay: '→ Next: Nara morning + Suma Beach sunset · Osaka base',
+  },
+  {
+    num: '11', date: 'Dec 3',
+    city: 'Osaka — Day Trip',
+    title: 'Nara Deer Park + Suma Beach',
+    transport: 'JR from Osaka to Nara ~50 min · JR back → Kobe Suma ~35 min · Kobe optional',
+    places: [
+      {
+        time: '8:00–8:45 AM', name: 'Mount Wakakusa',
+        description: 'Grass hill above Nara. Panoramic view of the basin and distant Osaka skyline. Best before deer climb up — around 7:30–8 AM.',
+        images: ['https://i.pinimg.com/1200x/85/36/6d/85366d0dee44779d771d3b9297805dec.jpg','https://i.pinimg.com/1200x/eb/ab/9c/ebab9cc4433e98c67ea209e146796d6e.jpg'],
+        transport: 'JR from Osaka to Nara ~50 min · 20 min walk from Kintetsu Nara Station', cost: '¥150', tip: 'Climb before 8:30 AM before deer take over the hill. 360° view includes distant Osaka.',
+      },
+      {
+        time: '10:00 AM–12:00 PM', name: 'Nara Deer Park',
+        description: '1,200 free-roaming sika deer. Buy shika senbei crackers (¥200) and bow to them — they bow back. It never gets old.',
+        images: ['https://i.pinimg.com/736x/5b/c0/b8/5bc0b865b2a912e2fd31ef4dc103de8a.jpg','https://i.pinimg.com/1200x/96/4b/0a/964b0a5def007b748fedc9f93a541f49.jpg','https://i.pinimg.com/736x/fe/b8/fd/feb8fd1bfc3d4de39598f8ab2e483e6b.jpg'],
+        transport: 'Adjacent to Yoshikien Garden', cost: 'Senbei crackers ¥200', tip: 'Bow slowly. The trained deer bow back. Hold cracker visible — do NOT hide it or they get aggressive.',
+      },
+      {
+        time: '12:30–1:15 PM', name: 'Nakatanidou',
+        description: "Nara's most famous mochi shop. Staff pound freshly made yomogi mochi at eye-watering speed — the fastest mochi pounding in Japan.",
+        images: ['https://i.pinimg.com/1200x/ca/75/18/ca751877a37872383d89642ec6acb2ee.jpg','https://i.pinimg.com/736x/0f/5f/10/0f5f10c9960dcca5d87b409c9372adec.jpg'],
+        transport: '5 min walk from Nara Deer Park', cost: 'Mochi ¥200–400', tip: 'Queue for the warm ones straight off the board. Yomogi (mugwort) mochi is the one to get.',
+      },
+      {
+        time: '3:00–5:30 PM', name: 'Suma Beach',
+        description: 'Best beach west of Osaka. Faces west directly — the November sunset across Osaka Bay is world-class. Pine trees frame the shore.',
+        images: ['https://i.pinimg.com/736x/06/30/e3/0630e3467baec4b504e8cef67759db59.jpg','https://i.pinimg.com/1200x/a4/16/13/a416135332be35c4d3ee12dab874367e.jpg'],
+        transport: 'JR from Nara → Osaka (~50 min) → JR Kobe Line → Suma Station (~30 min)', cost: 'Free', tip: 'Faces west — direct sunset over Osaka Bay. December water is cold but clear. Best sunset timing: 5:00–5:30 PM.',
+      },
+      {
+        time: '6:00–7:00 PM', name: 'Kobe Harborland Sunset',
+        description: 'Meriken Park waterfront. Golden hour across the bay. Optional Kobe beef dinner here.',
+        images: ['https://images.unsplash.com/photo-1507090960745-b32f65d3113a?w=800&q=80&fit=crop'],
+        transport: '10 min JR from Suma Station to Kobe Sannomiya', cost: 'Free · Kobe beef dinner ¥5,000–15,000', tip: 'December golden hour at 4:45–5:15 PM. The bridge silhouette and port cranes make the shot.',
+        optional: true,
+      },
+    ],
+    food: 'Nara forest teahouse (Mizuya Chaya) · Suma Beach convenience store sunset snacks · Optional Kobe beef at Ishida',
+    stay: 'Namba / Dotonbori — Osaka',
+    nextDay: '→ Next: Full Osaka day · last full evening in Japan',
+  },
+  {
+    num: '12', date: 'Dec 4',
+    city: 'Osaka',
+    title: 'Full Osaka Day',
+    transport: 'Osaka Metro · Namba as central base all day',
+    places: [
+      {
+        time: '9:00–10:30 AM', name: 'Osaka Castle Park',
+        description: 'The outer moat grounds at golden hour. Walk the stone walls and look back at the castle tower. The grounds and tower framed against the sky is the shot.',
+        images: ['https://i.pinimg.com/736x/21/ff/d3/21ffd37621f4bb5748659faefb340080.jpg','https://i.pinimg.com/736x/a6/a6/a9/a6a6a9b97b9c290b97cd83fef92ecaae.jpg'],
+        transport: 'Osaka Metro Tanimachi 4-chome · 10 min from Namba', cost: 'Free grounds · ¥600 museum (optional)', tip: 'Walk the outer moat path at 5 PM. The castle lit against winter sky from the west bridge is the shot.',
+      },
+      {
+        time: '11:00 AM–1:30 PM', name: 'Amerikamura',
+        description: "Osaka's youth culture district. Triangle Park is the social anchor. Streetwear, murals, vintage — last serious shopping window before departure.",
+        images: ['https://i.pinimg.com/1200x/6b/85/ec/6b85ec92bed8b7fe0a9c4e6e4fcc254c.jpg','https://i.pinimg.com/736x/ec/2f/a9/ec2fa9ff67d80a4846e47c10a67c200f.jpg'],
+        transport: '10 min walk from Namba', cost: 'Free to explore · personal expense', tip: 'Triangle Park as social anchor. Flamingo vintage is the best secondhand shop.',
+      },
+      {
+        time: '2:00–4:00 PM', name: 'Dotonbori Canal',
+        description: 'Glico Man, spinning crab, neon reflections on still water. Cross the Dotonbori bridge at 9:15 PM for peak reflections.',
+        images: ['https://i.pinimg.com/736x/9d/ff/2c/9dff2cc0f609ff53936445c8e74b69e0.jpg','https://i.pinimg.com/736x/52/ac/1c/52ac1c2338bdfe83deb575e6257186b5.jpg'],
+        transport: '10 min walk from Amerikamura', cost: 'Free · takoyaki ¥600', tip: 'Cross the Dotonbori Bridge at exactly 9:15 PM. Neon reflections peak in still water.',
+      },
+      {
+        time: '4:30–6:30 PM', name: 'Shinsekai',
+        description: 'Retro Osaka district. Tsutenkaku Tower, kushikatsu skewers. House rule: never double-dip the shared sauce.',
+        images: ['https://i.pinimg.com/1200x/88/19/11/881911456708a82c38a734acdf80ec7c.jpg','https://i.pinimg.com/736x/8e/d3/4f/8ed34f5824fadd41fc277cce4f939fd3.jpg'],
+        transport: '15 min metro from Namba', cost: 'Kushikatsu ¥100–200 per stick', tip: 'Order at the counter. The house rule: no double-dipping the shared sauce. Tsutenkaku Tower observation (¥700) is optional.',
+      },
+      {
+        time: '8:00–11:00 PM', name: 'Umeda Sky Building',
+        description: 'The Floating Garden Observatory on the 39th floor — open-air ring walkway with 360° night city views. Arrive at 8 PM for the transition from sunset into full city lights.',
+        images: ['https://i.pinimg.com/1200x/08/23/1f/08231febc10825bd33fbcff834a89b34.jpg','https://i.pinimg.com/736x/1f/b4/52/1fb452cae7f3639096902246880efced.jpg'],
+        transport: '10 min walk from JR Osaka Station · or taxi', cost: '¥1,500 observation deck', tip: 'Arrive at 8 PM for sunset transition into full city lights. The escalator tunnel between towers is itself iconic.',
+      },
+    ],
+    food: 'Takoyaki at Wanaka · Ichiran Ramen farewell bowl · Don Quijote midnight snack run',
+    stay: 'Namba Hostel — pack tonight',
+    nextDay: '→ Next: Pack tonight · 7-Eleven at dawn · KIX departure',
+  },
+  {
+    num: '13', date: 'Dec 5',
+    city: 'Osaka — Departure',
+    title: 'Final Morning + KIX',
+    transport: 'Nankai Rapi:t → KIX · 40 min · ¥1,430 · From Namba Station',
+    places: [
+      {
+        time: '7:00–8:00 AM', name: 'Final 7-Eleven Run',
+        description: 'Last egg salad sandwich, melon bread, Pocky, Calpis, melon soda. Japan convenience stores at 7 AM hit differently knowing this is the last one.',
+        images: ['https://i.pinimg.com/736x/40/a0/52/40a0524dfe0565bb24944c45587690e8.jpg','https://i.pinimg.com/1200x/88/51/37/885137d7635911ab90502b1faf459712.jpg'],
+        transport: 'Ground floor of almost any Osaka building', cost: '¥500–1,000', tip: 'The canon last breakfast: egg salad sandwich + melon bread + Pocky + Calpis. Buy one extra Pocky for the flight.',
+      },
+      {
+        time: '8:30–10:00 AM', name: 'Loft Osaka — Stationery',
+        description: 'Japanese notebooks, washi tape, pens, rubber stamps, pencil cases. Best carry-on souvenirs. B2 floor has the full washi tape wall.',
+        images: ['https://i.pinimg.com/736x/b8/f9/e2/b8f9e2a022234d24d0815a8d9a2870f2.jpg','https://i.pinimg.com/1200x/49/d0/13/49d013a69bb6a8cf96484179bdc984c6.jpg'],
+        transport: '10 min walk from Namba · Shinsaibashi area', cost: '¥500–3,000', tip: 'B2 floor: full washi tape wall, Midori notebooks, Japanese Pentel pens. Budget 30 min minimum.',
+      },
+      {
+        time: '12:00 PM onwards', name: 'Kansai International Airport',
+        description: 'Check in 3 hours early. Duty-free: matcha chocolates, limited sake, Shiseido skincare. Last tonkotsu at KIX Ganso Kuishinbo.',
+        images: ['https://i.pinimg.com/1200x/b0/27/1e/b0271e01aa0e605bae89b76e7a1da941.jpg','https://i.pinimg.com/736x/67/6c/31/676c3192936b09e87611e8b1bd08d7bc.jpg'],
+        transport: 'Nankai Rapi:t express from Namba · 40 min · ¥1,430', cost: '¥1,430', tip: 'Arrive 3 hours early. Duty-free: Shiseido skincare (cheaper than India), matcha KitKats in bulk.',
+      },
+    ],
+    food: '7-Eleven last breakfast · KIX ramen at Ganso Kuishinbo Yataimura',
+    stay: '—',
+    nextDay: null,
+  },
+]
+
+// Places count (excluding optional)
+export const TOTAL_PLACES = DAYS.reduce((sum, d) =>
+  sum + d.places.filter(p => !p.optional).length, 0)
+
+// All cities visited
+export const CITIES_VISITED = ['Tokyo', 'Mt Fuji', 'Kyoto', 'Nara', 'Kobe', 'Osaka']

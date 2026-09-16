@@ -1,0 +1,85 @@
+export const PACKING_CATEGORIES = [
+  {
+    id: 'documents',
+    label: 'Documents & ID',
+    icon: '📄',
+    items: [
+      { id: 'doc_passport',       label: 'Passport (valid > 6 months after Sep 28, 2029)', critical: true },
+      { id: 'doc_visa',           label: 'Schengen Visa printout — Italy (covers full EU trip incl. Monaco/France)', critical: true },
+      { id: 'doc_insurance',      label: 'Travel insurance certificate (min €30,000 medical — Schengen requirement)', critical: true },
+      { id: 'doc_itinerary',      label: 'Printed trip itinerary + hotel booking confirmations (required for visa)', critical: true },
+      { id: 'doc_flight',         label: 'Flight e-tickets BLR→FCO and NCE→BLR', critical: true },
+      { id: 'doc_emergency',      label: 'Emergency contacts card — Indian Embassy Rome: +39 06 4884642', critical: false },
+      { id: 'doc_forexcard',      label: 'Forex card or international debit card (Niyo, HDFC Regalia)', critical: false },
+      { id: 'doc_photocopies',    label: 'Photocopies of passport + visa + insurance (store separately from originals)', critical: false },
+    ],
+  },
+  {
+    id: 'money',
+    label: 'Money & Cards',
+    icon: '💳',
+    items: [
+      { id: 'money_niyo',         label: 'Niyo Global card loaded with Euros (zero forex markup)', critical: true },
+      { id: 'money_cash',         label: 'Euro cash €150–200 (~₹14,250–₹19,000) for rural areas, tolls, small vendors', critical: true },
+      { id: 'money_backup',       label: 'Backup debit card (different bank from primary)', critical: false },
+      { id: 'money_upi',          label: 'Note: UPI not widely accepted in Italy — ensure card-based payments', critical: false },
+      { id: 'money_notify',       label: 'Notify Indian bank of international travel before departure to avoid blocks', critical: false },
+    ],
+  },
+  {
+    id: 'electronics',
+    label: 'Electronics',
+    icon: '🔌',
+    items: [
+      { id: 'elec_phone',         label: 'Smartphone + EU eSIM (Airalo/Holafly — activate 1 day before travel)', critical: true },
+      { id: 'elec_adapter',       label: 'EU Type C/L plug adapter (Italy uses Type L — 3-pin rounded, unusual size)', critical: true },
+      { id: 'elec_powerbank',     label: 'Power bank 20,000 mAh (for day hikes — Amalfi Coast, Dolomites)', critical: false },
+      { id: 'elec_laptop',        label: 'Lightweight laptop or tablet for photo backup and content editing', critical: false },
+      { id: 'elec_earphones',     label: 'Noise-cancelling earphones (flights + overnight train)', critical: false },
+      { id: 'elec_cables',        label: 'USB-C charging cable x2 + watch charger', critical: false },
+    ],
+  },
+  {
+    id: 'camera',
+    label: 'Camera & Photography',
+    icon: '📷',
+    items: [
+      { id: 'cam_body',           label: 'Camera body — full-frame mirrorless (Sony A7 series or similar rental)', critical: false },
+      { id: 'cam_2470',           label: '24–70mm f/2.8 lens (versatile for architecture, streets, golden hour)', critical: false },
+      { id: 'cam_wide',           label: '16–35mm wide-angle (Dolomites panoramas, Piazzale Michelangelo, Santorini)', critical: false },
+      { id: 'cam_batteries',      label: 'Camera batteries x3 + dual charger (long days mean heavy drain)', critical: false },
+      { id: 'cam_sdcards',        label: 'SD cards 128 GB x3 — never shoot without a spare', critical: false },
+      { id: 'cam_gorilla',        label: 'Gorillapod flexible tripod (lightweight, works on railings and uneven surfaces)', critical: false },
+    ],
+  },
+  {
+    id: 'clothing-summer',
+    label: 'Clothing — Mediterranean September',
+    icon: '👕',
+    items: [
+      { id: 'cloth_tshirts',      label: 'Lightweight t-shirts x5 (merino wool if possible — odour-resistant, packs small)', critical: false },
+      { id: 'cloth_trousers',     label: 'Lightweight travel trousers x2 (zip-off or convertible — also covers Vatican/church dress code)', critical: false },
+      { id: 'cloth_shorts',       label: 'Shorts x2 — note: NOT permitted in churches and Vatican (must change before entering)', critical: false },
+      { id: 'cloth_layer',        label: 'Light fleece or merino sweater (Dolomites at 2,200 m can be 10°C even in September)', critical: false },
+      { id: 'cloth_shoes',        label: 'Comfortable walking shoes — Path of the Gods hike requires proper grip soles', critical: true },
+      { id: 'cloth_sandals',      label: 'Sandals for coastal towns, Amalfi, Positano beach days', critical: false },
+      { id: 'cloth_scarf',        label: 'Light scarf or shawl (church coverage for Vatican + Amalfi cathedral)', critical: false },
+      { id: 'cloth_swimwear',     label: 'Swimwear for Positano, Amalfi beaches, Lake Como', critical: false },
+    ],
+  },
+  {
+    id: 'health',
+    label: 'Health & Pharmacy',
+    icon: '💊',
+    items: [
+      { id: 'health_sunscreen',   label: 'SPF 50 sunscreen — Amalfi Coast and Mediterranean sun is intense in September', critical: true },
+      { id: 'health_painkillers', label: 'Ibuprofen / paracetamol (Italian pharmacies are excellent but pricier)', critical: false },
+      { id: 'health_antidiarr',   label: 'Oral rehydration salts + antidiarrhoeal (diet change adjustment)', critical: false },
+      { id: 'health_plasters',    label: 'Blister plasters x10 — cobblestones and hill towns are brutal on feet', critical: false },
+      { id: 'health_insectrepel', label: 'Insect repellent (evening in rural Tuscany and Amalfi hillside areas)', critical: false },
+      { id: 'health_eyedrops',    label: 'Eye drops (air conditioning on overnight trains, dry climate)', critical: false },
+    ],
+  },
+]
+
+export const TOTAL_ITEMS = PACKING_CATEGORIES.reduce((s, c) => s + c.items.length, 0)

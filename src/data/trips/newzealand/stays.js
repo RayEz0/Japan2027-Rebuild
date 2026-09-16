@@ -1,0 +1,156 @@
+export const STAYS = [
+  {
+    city:        'Auckland',
+    dates:       'Nov 10 – Nov 12',
+    nights:      2,
+    accentColor: '#D8E8D8',
+    options: [
+      {
+        name:    'YHA Auckland City',
+        address: '18 Liverpool Street, Auckland CBD · 5 min walk to Sky Tower',
+        price:   '₹2,000 – ₹3,500 / night (dorm) · ₹5,500 – ₹9,000 (private twin)',
+        why:     'Best-located hostel in Auckland — right in the heart of the CBD, minutes from Viaduct Harbour and Ponsonby. YHA standard means clean, secure, and reliable. Has a rooftop deck with harbour views.',
+        type:    'hostel',
+      },
+      {
+        name:    'Base Auckland',
+        address: 'Wakefield Street, Auckland City Centre',
+        price:   '₹1,800 – ₹2,800 / night (dorm) · ₹5,000 – ₹8,500 (private)',
+        why:     'The social hostel choice — Base has a ground-floor bar, regular events, and a young international crowd. Slightly cheaper than YHA and in an equally good location. Perfect for the first two nights of a big trip.',
+        type:    'hostel',
+      },
+    ],
+  },
+  {
+    city:        'Rotorua',
+    dates:       'Nov 12 – Nov 14',
+    nights:      2,
+    accentColor: '#E8E0D0',
+    options: [
+      {
+        name:    'Crash Palace Hostel',
+        address: '1271 Haupapa Street, Rotorua City Centre',
+        price:   '₹1,500 – ₹2,500 / night (dorm)',
+        why:     'Consistently well-rated hostel in Rotorua\'s CBD — small, friendly, with a proper kitchen and lounge. A 10-minute walk from Te Puia and the lakefront. The social vibe here is genuine rather than performative.',
+        type:    'hostel',
+      },
+      {
+        name:    'Base Rotorua',
+        address: '1140 Hinemaru Street, Rotorua',
+        price:   '₹1,800 – ₹2,800 / night (dorm) · ₹4,500 – ₹7,500 (private)',
+        why:     'Larger, more facilities-heavy option in the same CBD area. Secure storage for gear, en-suite options available, and walking distance to the night market on Eat Streat. Good for a two-night Rotorua base.',
+        type:    'hostel',
+      },
+    ],
+  },
+  {
+    city:        'Wellington',
+    dates:       'Nov 14 – Nov 17',
+    nights:      2,
+    accentColor: '#D8E0EC',
+    options: [
+      {
+        name:    'YHA Wellington City',
+        address: '292 Wakefield Street, Wellington CBD',
+        price:   '₹2,000 – ₹3,200 / night (dorm) · ₹6,000 – ₹9,500 (private)',
+        why:     'Central Wellington location directly between the waterfront and Cuba Street — ideal for walking everything. YHA Wellington is well-maintained, has a full kitchen and lounge, and is a short walk from Te Papa.',
+        type:    'hostel',
+      },
+      {
+        name:    'Nomads Capital',
+        address: '118 Wakefield Street, Wellington CBD',
+        price:   '₹1,800 – ₹2,800 / night (dorm)',
+        why:     'More social hostel atmosphere with bar on site. Good for meeting other solo travellers on the road. Cuba Street and the waterfront are both 5 minutes away on foot. Budget-friendly with solid facilities.',
+        type:    'hostel',
+      },
+    ],
+  },
+  {
+    city:        'Queenstown',
+    dates:       'Nov 17 – Nov 22',
+    nights:      5,
+    accentColor: '#D0E4EC',
+    options: [
+      {
+        name:    'Nomads Queenstown',
+        address: '5 Church Street, Queenstown Town Centre',
+        price:   '₹2,200 – ₹3,800 / night (dorm) · ₹7,000 – ₹12,000 (private)',
+        why:     'The best-located backpacker hostel in Queenstown — right on Church Street in the absolute heart of the town, steps from Fergburger and the lakefront. Rooftop hot tub makes five nights very comfortable. Popular, so book early.',
+        type:    'hostel',
+      },
+      {
+        name:    'Base Queenstown',
+        address: 'Lake Esplanade, Queenstown',
+        price:   '₹1,900 – ₹3,200 / night (dorm) · ₹6,500 – ₹11,000 (private)',
+        why:     'Lake-facing hostel with a terrace directly over the Wakatipu waterfront. The sunset views from the bar are remarkable. Slightly further from the Shotover Street strip but the lake view compensates. Better value for longer stays.',
+        type:    'hostel',
+      },
+    ],
+  },
+  {
+    city:        'Milford Sound',
+    dates:       'Nov 20 (day trip base: Queenstown)',
+    nights:      0,
+    accentColor: '#D8EDE8',
+    options: [
+      {
+        name:    'Milford Sound Lodge',
+        address: 'Milford Road, Milford Sound, Fiordland',
+        price:   '₹4,500 – ₹8,000 / night (camping cabin) · ₹12,000+ (eco-lodge room)',
+        why:     'The only accommodation option at Milford Sound itself — stunning location at the fiord\'s edge with mountains rising directly above. Staying overnight (rather than day-tripping) allows access to Milford at dawn and dusk when day tourists are absent. Booking essential months ahead.',
+        type:    'lodge',
+      },
+      {
+        name:    'Te Anau Lake View Holiday Park',
+        address: 'Te Anau Terrace, Te Anau (gateway to Fiordland)',
+        price:   '₹1,800 – ₹3,500 / night (cabin)',
+        why:     'Budget alternative — stay in Te Anau (1.5h from Milford) and do the fiord as an early-morning run. Te Anau is a pleasant lakeside town in its own right and the wildlife boat tour of Glowworm Caves from here is excellent.',
+        type:    'holiday-park',
+      },
+    ],
+  },
+  {
+    city:        'Christchurch',
+    dates:       'Nov 23 – Nov 25',
+    nights:      2,
+    accentColor: '#E8E4D8',
+    options: [
+      {
+        name:    'Jailhouse Hostel',
+        address: '338 Lincoln Road, Addington, Christchurch',
+        price:   '₹2,000 – ₹3,200 / night (converted cell dorm) · ₹6,000 – ₹9,000 (private)',
+        why:     'One of the most unique hostel experiences in New Zealand — a converted 19th-century stone prison where original cell blocks have been transformed into rooms. The heritage architecture is fascinating and it\'s become one of Christchurch\'s best-known hostels. Well-run with secure facilities.',
+        type:    'hostel',
+      },
+      {
+        name:    'YHA Christchurch City',
+        address: '273 Manchester Street, Christchurch Central',
+        price:   '₹1,900 – ₹3,000 / night (dorm) · ₹5,500 – ₹8,500 (private)',
+        why:     'Central Christchurch location walking distance from the Botanic Gardens, Riverside Market, and Re:START Mall. YHA standard reliability — clean, safe, full kitchen. Best choice if you want city-centre convenience for the final two nights.',
+        type:    'hostel',
+      },
+    ],
+  },
+  {
+    city:        'Mount Cook / Aoraki',
+    dates:       'Nov 22 – Nov 23',
+    nights:      1,
+    accentColor: '#E0E8F0',
+    options: [
+      {
+        name:    'YHA Aoraki Mount Cook',
+        address: 'Bowen Drive, Mount Cook Village, Mackenzie District',
+        price:   '₹2,500 – ₹4,000 / night (dorm) · ₹7,500 – ₹12,000 (private)',
+        why:     'The only backpacker-priced accommodation at Mount Cook Village — right at the base of the Southern Alps, 5 minutes walk from the Hooker Valley Track start. The lounge has floor-to-ceiling mountain views. Book well in advance — limited beds and extremely popular in November.',
+        type:    'hostel',
+      },
+      {
+        name:    'Mount Cook Alpine Lodge',
+        address: 'Bowen Drive, Mount Cook Village',
+        price:   '₹7,000 – ₹14,000 / night (room)',
+        why:     'Mid-range lodge option if YHA is full or you want a private room with mountain views. Not a budget choice but the location directly facing Aoraki makes one night here worthwhile as a splurge. Includes breakfast.',
+        type:    'lodge',
+      },
+    ],
+  },
+]

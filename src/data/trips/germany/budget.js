@@ -1,0 +1,120 @@
+export const BUDGET_ITEMS = [
+  {
+    id:       'trains',
+    icon:     '🚂',
+    name:     'Trains — Stuttgart → Black Forest + Munich → Luxembourg',
+    notes:    'DB (Deutsche Bahn) IC/EC trains · Stuttgart Hbf to/from Black Forest region (Freiburg, Baden-Baden) · Munich Hbf to Luxembourg Gare Centrale (EC, ~4.5 hrs) · DB Navigator app for tickets · Book Sparpreis fares 2–3 months ahead for savings',
+    inr:      '₹8,000 – ₹15,000',
+    min:      8000,
+    max:      15000,
+    pct:      100,
+    category: 'transport',
+  },
+  {
+    id:       'car-hire',
+    icon:     '🚗',
+    name:     'Car Hire — 2 Days (Black Forest + Neuschwanstein Leg)',
+    notes:    'Automatic required · Pickup Stuttgart or Freiburg, drop Munich · Day 2 Black Forest drive (Freiburg → Triberg → Baden-Baden) + Day 3 Neuschwanstein drive (Baden-Baden → Füssen → Munich) · Sixt / Europcar / Hertz in Stuttgart or Freiburg · Fuel costs included estimate',
+    inr:      '₹6,000 – ₹12,000',
+    min:      6000,
+    max:      12000,
+    pct:      100,
+    category: 'transport',
+  },
+  {
+    id:       'local-transport',
+    icon:     '🚇',
+    name:     'Local Transport — S-Bahn, U-Bahn, Tram (Stuttgart + Munich)',
+    notes:    'Munich MVV day pass (Tageskarte Innenraum) ~€8/day · Stuttgart VVS day pass ~€6/day · 3 days Munich + 1 day Stuttgart · Covers all U-Bahn, S-Bahn, tram within city zones',
+    inr:      '₹2,000 – ₹4,000',
+    min:      2000,
+    max:      4000,
+    pct:      100,
+    category: 'transport',
+  },
+  {
+    id:       'accommodation',
+    icon:     '🛏️',
+    name:     'Accommodation — 4 Nights',
+    notes:    'Stuttgart 1n (MEININGER hostel, Hauptstätter Str) + Baden-Baden 1n (mid-range hotel) + Munich 2n (Generator hostel or budget hotel, Landwehrstraße) · June is peak tourist season in Munich — book 3–4 months ahead · Munich hostel dorm ₹2,500–₹4,000/night; private room ₹5,500–₹8,000/night',
+    inr:      '₹20,000 – ₹38,000',
+    min:      20000,
+    max:      38000,
+    pct:      100,
+    category: 'stay',
+  },
+  {
+    id:       'food',
+    icon:     '🥨',
+    name:     'Food — 5 Days',
+    notes:    '~₹1,500–₹2,500/day · Germany is significantly cheaper than Norway or Switzerland · Viktualienmarkt picnic strategy (€5–8/lunch) + mid-range dinner (€12–18) · Breakfast included at MEININGER and many German hotels · Munich beer gardens affordable for lunch',
+    inr:      '₹8,000 – ₹13,000',
+    min:      8000,
+    max:      13000,
+    pct:      100,
+    category: 'food',
+  },
+  {
+    id:       'experiences',
+    icon:     '🏰',
+    name:     'Museum & Entry Fees',
+    notes:    'Porsche Museum Stuttgart ₹1,700 · Mercedes-Benz Museum ₹1,330 · Neuschwanstein Castle ₹1,500 · Hohenschwangau Castle ₹1,500 · BMW Museum Munich ₹1,000 · Nymphenburg Palace ₹1,000 · Deutsches Museum ₹800 · Triberg Waterfalls ₹470 · Freiburg tower ₹400',
+    inr:      '₹8,000 – ₹14,000',
+    min:      8000,
+    max:      14000,
+    pct:      100,
+    category: 'experience',
+  },
+  {
+    id:       'shopping',
+    icon:     '🛍️',
+    name:     'Shopping + Souvenirs',
+    notes:    'Bavarian souvenirs (Viktualienmarkt, Marienplatz) · Cuckoo clock from Triberg (genuine Black Forest item — budget ₹2,000–₹6,000 for quality) · Beer stein · Pretzel bread for the train · Stuttgart design items near Königstraße',
+    inr:      '₹4,000 – ₹10,000',
+    min:      4000,
+    max:      10000,
+    pct:      100,
+    category: 'shopping',
+  },
+  {
+    id:       'esim',
+    icon:     '📶',
+    name:     'eSIM — EU Data Plan',
+    notes:    'Germany is covered by the EU Airalo plan arranged for the France leg of Arc 05 · Nominal top-up cost if data running low · German roaming on Telekom / O2 networks · No extra SIM purchase needed if EU plan active from France',
+    inr:      '₹500 – ₹1,000',
+    min:      500,
+    max:      1000,
+    pct:      100,
+    category: 'setup',
+  },
+]
+
+// NOTE: Germany is part of Arc 05 Western Europe. International flights (BLR → Paris CDG)
+// are budgeted in the France trip and NOT duplicated here. Germany budget covers only
+// in-Germany costs: trains, car hire, accommodation, food, activities, and local transport.
+
+export const BUDGET_TOTAL = {
+  min: BUDGET_ITEMS.reduce((s, i) => s + i.min, 0),
+  max: BUDGET_ITEMS.reduce((s, i) => s + i.max, 0),
+}
+
+export const BUDGET_CATEGORIES = {
+  transport:  { label: 'Transport',   color: '#D8E6F2' },
+  stay:       { label: 'Stays',       color: '#E8DCC7' },
+  food:       { label: 'Food',        color: '#DCE8DD' },
+  experience: { label: 'Experiences', color: '#F4D6D6' },
+  gear:       { label: 'Gear',        color: '#EFEDE7' },
+  setup:      { label: 'Setup',       color: '#E8E4D0' },
+  shopping:   { label: 'Shopping',    color: '#FDF1EE' },
+}
+
+export const PLANNED_BY_CATEGORY = {
+  transport:  { min: 16000, max: 31000 },
+  food:       { min: 8000,  max: 13000 },
+  stay:       { min: 20000, max: 38000 },
+  experience: { min: 8000,  max: 14000 },
+  shopping:   { min: 4000,  max: 10000 },
+  gear:       { min: 0,     max: 0     },
+  setup:      { min: 500,   max: 1000  },
+  other:      { min: 0,     max: 0     },
+}

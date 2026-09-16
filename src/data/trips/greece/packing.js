@@ -1,0 +1,85 @@
+export const PACKING_CATEGORIES = [
+  {
+    id: 'documents',
+    label: 'Documents & ID',
+    icon: '📄',
+    items: [
+      { id: 'doc_passport',       label: 'Passport (valid > 6 months after Oct 9, 2029)', critical: true },
+      { id: 'doc_schengen_note',  label: 'Schengen Visa from Italy — valid for Greece (EU Schengen area, same visa)', critical: true },
+      { id: 'doc_insurance',      label: 'Travel insurance certificate (verify Greece coverage in policy)', critical: true },
+      { id: 'doc_ferry_tickets',  label: 'Blue Star Ferry booking confirmation — Athens → Santorini', critical: true },
+      { id: 'doc_fastferry',      label: 'Fast ferry booking — Santorini → Mykonos', critical: true },
+      { id: 'doc_flight_myk',     label: 'Flight tickets — Mykonos → Athens → BLR', critical: true },
+      { id: 'doc_emergency',      label: 'Emergency contacts — Indian Embassy Athens: +30 210 721 6227', critical: false },
+      { id: 'doc_forexcard',      label: 'Forex/international card (Niyo or equivalent) — Euro remains currency in Greece', critical: false },
+    ],
+  },
+  {
+    id: 'money',
+    label: 'Money & Cards',
+    icon: '💳',
+    items: [
+      { id: 'money_niyo',         label: 'Niyo Global card — Greece uses Euro (€), same as Italy', critical: true },
+      { id: 'money_cash',         label: 'Euro cash €80–120 (~₹7,600–₹11,400) — island ATMs available but queues in summer', critical: false },
+      { id: 'money_backup',       label: 'Backup card from different bank', critical: false },
+      { id: 'money_ferrycash',    label: 'Small Euro notes for Delos boat ticket (quay ticket booth, card sometimes unavailable)', critical: false },
+      { id: 'money_tipping',      label: 'Note: Tipping ~10% is expected in Greek sit-down restaurants, even with card bill', critical: false },
+    ],
+  },
+  {
+    id: 'electronics',
+    label: 'Electronics',
+    icon: '🔌',
+    items: [
+      { id: 'elec_phone',         label: 'Smartphone + EU eSIM (verify Greece coverage on Airalo/Holafly plan)', critical: true },
+      { id: 'elec_adapter',       label: 'EU Type C plug adapter (Greece uses Type C/F — compatible with Italian adapter)', critical: true },
+      { id: 'elec_powerbank',     label: 'Power bank 20,000 mAh (Delos has no power points; long beach days)', critical: false },
+      { id: 'elec_earphones',     label: 'Earphones for ferry crossing (Blue Star ferry is 7.5 hours)', critical: false },
+      { id: 'elec_cables',        label: 'USB-C cables x2 — ferry and airport charging', critical: false },
+      { id: 'elec_tablet',        label: 'Tablet or e-reader for overnight ferry (Blue Star overnight journey)', critical: false },
+    ],
+  },
+  {
+    id: 'camera',
+    label: 'Camera & Photography',
+    icon: '📷',
+    items: [
+      { id: 'cam_body',           label: 'Camera body — same rental kit as Italy if continuing directly (no need to return)', critical: false },
+      { id: 'cam_2470',           label: '24–70mm — ideal for Acropolis, street photography, taverna scenes', critical: false },
+      { id: 'cam_wide',           label: '16–35mm — Santorini caldera panorama, Oia blue domes, Delos Sacred Way', critical: false },
+      { id: 'cam_batteries',      label: 'Batteries x3 + charger — long outdoor days in Santorini and Delos', critical: false },
+      { id: 'cam_sdcards',        label: 'SD cards — check remaining space after Italy shoot, add new card if needed', critical: false },
+      { id: 'cam_waterbag',       label: 'Waterproof dry bag for camera (boat splash on Delos ferry and Santorini caldera boat)', critical: false },
+    ],
+  },
+  {
+    id: 'clothing-warm',
+    label: 'Clothing — Aegean Early October',
+    icon: '👕',
+    items: [
+      { id: 'cloth_tshirts',      label: 'Lightweight t-shirts x4 (same as Italy packing — no change needed for early October)', critical: false },
+      { id: 'cloth_lightlayer',   label: 'Light layer — merino cardigan or thin fleece (evenings in Athens and island nights drop to 17°C)', critical: false },
+      { id: 'cloth_trousers',     label: 'Long trousers x1 (required for Acropolis church visits — bring what you used for Italy)', critical: false },
+      { id: 'cloth_shorts',       label: 'Shorts x2 — beaches are active in October, water temperature still 23°C', critical: false },
+      { id: 'cloth_swimwear',     label: 'Swimwear for Perissa black beach and Mykonos beach clubs', critical: true },
+      { id: 'cloth_beachshoes',   label: 'Beach shoes / water sandals (Perissa black sand heats to 55°C in midday — barefoot impassable)', critical: true },
+      { id: 'cloth_walkingshoes', label: 'Comfortable walking shoes for Acropolis, Cape Sounion, Delos uneven ancient stone', critical: true },
+      { id: 'cloth_scarf',        label: 'Scarf or shawl (Orthodox churches on Santorini — shoulders must be covered)', critical: false },
+    ],
+  },
+  {
+    id: 'health',
+    label: 'Health & Beach',
+    icon: '💊',
+    items: [
+      { id: 'health_sunscreen',   label: 'SPF 50 reef-safe sunscreen (Mykonos beaches — reef-safe is better practice and increasingly required)', critical: true },
+      { id: 'health_insectrepel', label: 'Insect repellent (evening outdoor dining in Athens and Mykonos, mosquitoes active in October)', critical: false },
+      { id: 'health_rehydration', label: 'Oral rehydration sachets (Delos has no water points — dehydration risk on exposed site)', critical: false },
+      { id: 'health_seacalm',     label: 'Seasickness tablets (Blue Star overnight ferry from Piraeus can be rough in October Aegean)', critical: false },
+      { id: 'health_plasters',    label: 'Blister plasters — Delos ancient stone and Acropolis marble are both brutal on feet', critical: false },
+      { id: 'health_aftersun',    label: 'After-sun / aloe vera (Perissa black beach at midday is intense even in October)', critical: false },
+    ],
+  },
+]
+
+export const TOTAL_ITEMS = PACKING_CATEGORIES.reduce((s, c) => s + c.items.length, 0)

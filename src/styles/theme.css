@@ -1,0 +1,32 @@
+/* Design tokens reference — consumed via index.css :root */
+
+/*
+  COLORS
+  --paper:  #F5F4F0  warm beige background
+  --bg-alt: #EFEDE7  subtle alt background
+  --surf:   #FFFFFF  card / panel surface
+  --ink:    #0C0C0C  primary text
+  --ink2:   #3A3A3A  secondary text
+  --ink3:   #777777  muted / metadata
+  --ink4:   #BBBBBB  placeholder / disabled
+  --accent: #B8321A  red accent (Japan flag)
+  --border: #D5D2CA  default border
+
+  CITY ACCENTS (for future city pills)
+  --city-tokyo: #D8E6F2
+  --city-fuji:  #DCE8DD
+  --city-kyoto: #E8DCC7
+  --city-nara:  #E8E4D0
+  --city-osaka: #F4D6D6
+
+  TYPOGRAPHY
+  font-serif:  Fraunces — headings, large numerals
+  font-sans:   Outfit   — body text
+  font-mono:   JetBrains Mono — labels, metadata, code
+
+  LAYOUT
+  --sb-w: 230px — sidebar width
+
+  WORLD TOUR COUNTRIES (future expansion)
+  Japan, South Korea, Thailand, UK, Scotland
+*/
